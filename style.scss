@@ -1,0 +1,113 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: pink;
+
+body{
+  direction: rtl;
+}
+
+header{
+  width: 100%;
+  height: 300px;
+  background-color: greenyellow;
+
+  #topbar{
+    width: 100%;
+    height:40px;
+    display:flex;
+    flex-direction: row;
+
+    div{
+      background-color: aqua;
+      width:5%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  #introduction{
+    width:50%;
+    margin:auto;
+
+    h1 {
+      font: 100% $font-stack;
+      color: $primary-color;
+      font-size: 30px;
+      text-align: center;
+      margin: 10px;
+    }
+  }
+
+}
+
+#wrapper {
+  width:100%;
+
+  main {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    top: -40px;
+    margin-bottom: -40px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: auto auto auto;
+    background-color: darkgreen;
+
+    #rightSide {
+      background-color: orange;
+      grid-column-start: 1;
+      grid-column-end: 2;
+
+      div {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      #filterbar {
+        background-color: black;
+        height: 400px;
+      }
+
+      .advertise{
+        background-color: red;
+        height: 200px;
+      }
+
+    }
+
+    #leftSide {
+      background-color: brown;
+      grid-column-start: 2;
+      grid-column-end: 4;
+
+      .record {
+        display: flex;
+        flex-direction: row;
+        background-color: red;
+        height: 120px;
+
+        .recordpart1 {
+          flex: 20%;
+          background-color: white;
+        }
+        .recordpart2 {
+          flex: 30%;
+          background-color: whitesmoke;
+        }
+        .recordpart3 {
+          flex: 40%;
+          background-color: floralwhite;
+        }
+      }
+    }
+  }
+}
+
+
+footer{
+  display: grid;
+  width: 100%;
+  height: 200px;
+  background-color: lightgoldenrodyellow;
+}
