@@ -1,8 +1,15 @@
+@import "reset.css";
+
 //custom class and vars
 $font-stack: Helvetica, sans-serif;
-
 $myBorder: 1px solid #d9e4ea;
 $myTextColor: #9cb3bd;
+
+.centerImg{
+  display:block;
+  width: 95%;
+  margin: 5px auto;
+}
 
 .myHeadline{
   height: 54px;
@@ -13,6 +20,11 @@ $myTextColor: #9cb3bd;
   font-weight: bold;
 }
 
+.buyMe{
+  background-color: #00c7d9;
+  border-radius: 50px;
+  color:white;
+}
 
 //page css
 body{
@@ -23,7 +35,7 @@ body{
 header{
   width: 100%;
   height: 360px;
-  background-color: lightblue;
+  background-color: #00d3e6;
 
   #topbar{
     width: 70%;
@@ -31,11 +43,20 @@ header{
     padding-top:15px;
     margin: auto;
 
-
     #rightTopBar{
       display:flex;
       flex-direction: row;
       float: right;
+
+      #insurance{
+        background-color: transparent;
+        border: none;
+        height: 35px;
+        position: relative;
+        bottom: 12px;
+        font-size: 14px;
+        font-weight: bold;
+      }
     }
 
     #leftTopBar{
@@ -110,11 +131,64 @@ header{
     #rightSide {
       grid-column-start: 1;
       grid-column-end: 2;
-
+      max-width: 310px;
 
       h3{
         @extend .myHeadline;
       }
+
+      h4{
+        margin:15px;
+        padding-bottom: 25px;
+        border-bottom: $myBorder;
+      }
+
+      #selectArea{
+        margin:auto;
+        width:90%;
+        padding-bottom: 25px;
+        border-bottom: $myBorder;
+
+        select{
+          background-color: white;
+          margin-left:15px;
+          margin-bottom: 10px;
+          width: 100%;
+          height:36px;
+        }
+      }
+
+      p{
+        margin:15px;
+        padding-bottom: 25px;
+        border-bottom: $myBorder;
+        height: 40px;
+        display:flex;
+        font-size: 14px;
+
+        span{
+          width:75%;
+          float:right;
+          margin-left:5px;
+        }
+
+        button{
+          float:left;
+          margin-left:5px;
+          width:34px;
+          height:34px;
+        }
+
+      }
+
+      #getOffers{
+        @extend .buyMe;
+        width:70%;
+        height:36px;
+        display: block;
+        margin:auto;
+      }
+
 
       div {
         width: 100%;
@@ -128,9 +202,13 @@ header{
       }
 
       .advertise{
-        background-color: red;
-        height: 457px;
+        //height: 457px;
+        background-color: white;
         border: $myBorder;
+
+        img{
+          @extend .centerImg;
+        }
       }
 
     }
@@ -138,41 +216,104 @@ header{
     #leftSide {
       grid-column-start: 2;
       grid-column-end: 4;
+      min-width: 690px;
 
       #searchResults{
         height:100px;
         margin-bottom: 14px;
         background-color: #ffffff;
         border: $myBorder;
+        color: #4f788a;
 
         h3{
           @extend .myHeadline;
         }
 
         #resultsFilter{
+          margin:15px;
+          border:0;
 
+          form{
+            display: inline;
+
+            label{
+              select{
+                font-size: 16px;
+                border: 0;
+                background-color: transparent;
+              }
+            }
+          }
+          span{
+            border-right:1px solid black;
+            padding-right:10px;
+            margin-right: 10px;
+          }
         }
       }
 
       .record {
         display: flex;
         flex-direction: row;
-        background-color: red;
         height: 143px;
         margin-bottom: 14px;
         border: $myBorder;
+        background-color: white;
 
         .recordpart1 {
-          flex: 20%;
-          background-color: honeydew;
+          flex: auto;
+
+          img{
+            height: 92%;
+            border: $myBorder;
+            @extend .centerImg;
+          }
         }
         .recordpart2 {
-          flex: 30%;
-          background-color: whitesmoke;
+          flex: 50%;
+          margin: 15px;
+
+          h2{
+            font-weight: bold;
+          }
+
+          p{
+            padding-top:15px;
+
+            span{
+              float:left;
+              img{
+                width:100%;
+                height:auto;
+              }
+            }
+          }
         }
         .recordpart3 {
-          flex: 40%;
-          background-color: floralwhite;
+          flex: 20%;
+          margin: 15px;
+          border-right: 1px solid black;
+          padding-right: 20px;
+          position: relative;
+
+          h3{
+            font-size: 28px;
+            span{
+              font-size: 18px;
+            }
+          }
+          p{
+            padding-top:5px;
+            padding-bottom:15px;
+          }
+
+          button{
+            @extend .buyMe;
+            position:absolute;
+            bottom: 0;
+            width:70%;
+            height:36px;
+          }
         }
       }
     }
@@ -201,11 +342,51 @@ footer{
   display: grid;
   width: 100%;
   height: 286px;
+  color:white;
   background-color: #2a394d;
 
   #pageTree{
     height: 240px;
     background-color: #33455d;
+    display: flex;
+    flex-direction: row;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    button{
+      border-radius: 15px;
+      width: 80%;
+    }
+    div{
+      min-width:15%;
+      margin:10px;
+      color:white;
+      padding-top: 50px;
+
+      img{
+        margin-bottom: 10px;
+      }
+    }
+
+    h5{
+      font-weight: bold;
+    }
+    p{
+      margin-bottom: 7px;
+    }
+
+  }
+
+  #designedBy{
+    width:80%;
+    padding-right:15%;
+    padding-left:15%;
+
+    p {
+      height:46px;
+      line-height: 46px;
+      display: inline;
+    }
   }
 }
 
@@ -287,6 +468,8 @@ footer{
 
   #wrapper {
     main {
+      top:0;
+
       #breadcrumbs {
         display: none;
       }
@@ -298,6 +481,34 @@ footer{
       #leftSide {
         grid-column-start: 1;
         grid-column-end: 4;
+        min-width: 0;
+
+        #searchResults{
+          display:none;
+        }
+        .record{
+          .recordpart2{
+            margin-left:0;
+            margin-right:5px;
+            p{
+              span{
+                width:55px;
+
+                img{
+                  height: auto;
+                  float:left;
+                }
+              }
+            }
+          }
+        }
+        .record{
+          .recordpart3{
+            h3{
+              font-size: 18px;
+            }
+          }
+        }
       }
 
       #searchPages {
@@ -306,7 +517,12 @@ footer{
         grid-column-start: 2;
         grid-column-end: 3;
       }
-
     }
+    p{
+      font-size: 10px;
+    }
+  }
+  footer{
+    display:none;
   }
 }

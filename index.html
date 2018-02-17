@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Trusty</title>
     <!--<link rel="stylesheet" type="text/css" href="style.css">-->
-    <link rel="stylesheet" type="text/css" href="reset.css">
+    <!--<link rel="stylesheet" type="text/css" href="reset.css">-->
     <script src="./dist/bundle.js"></script>
 </head>
 <body>
@@ -12,13 +12,26 @@
         <div id="topbar">
             <div id="rightTopBar">
                 <div><img src="images/logo.png"></div>
-                <div><img src="images/logo.png"></div>
-                <div><img src="images/logo.png"></div>
-                <div><img src="images/logo.png"></div>
+                <div>
+                    <img src="images/caoch.png">
+                    <select id="insurance">
+                        <option value="">ביטוח דירה</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <img src="images/verticalLine.png">
+                </div>
+                <div><img src="images/search.png"></div>
             </div>
             <div id="leftTopBar">
-                <div><img src="images/logo.png"></div>
-                <div><img src="images/logo.png"></div>
+                <div>
+                    <img src="images/profile.png">
+                </div>
+                <div>
+                    <img src="images/mail.png">
+                    <img src="images/verticalLine.png">
+                </div>
             </div>
         </div>
         <div id="introduction">
@@ -67,50 +80,322 @@
                 </div>
             </div>
             <div id="rightSide">
-                <div id="filterbar">
+                <form id="filterbar">
                     <h3>אשף המחיר</h3>
+                    <h4>לקבלת הצעת מחיר מותאמת אישית אנא הזן
+                        את הפרטים הבאים
+                    </h4>
+                    <div id="selectArea">
+                        <label><select>
+                                <option value="">בחר את סוג הביטוח</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                        </select></label>
+                        <label><select>
+                            <option value="">בחר את סוג הביטוח</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select></label>
+                        <label><select>
+                            <option value="">בחר את סוג הביטוח</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select></label>
+                        <label><select>
+                            <option value="">בחר את סוג הביטוח</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select></label>
+                        <label><select>
+                            <option value="">בחר את סוג הביטוח</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select></label>
+                        <label><select>
+                            <option value="">בחר את סוג הביטוח</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select></label>
+                    </div>
+                    <p><span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
+                        <button>כן</button>
+                        <button>לא</button>
+                    </p>
+                    <p><span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
+                        <button>כן</button>
+                        <button>לא</button>
+                    </p>
+                    <p><span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
+                        <button>כן</button>
+                        <button>לא</button>
+                    </p>
+                    <p><span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
+                        <button>כן</button>
+                        <button>לא</button>
+                    </p>
+                    <p><span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
+                        <button>כן</button>
+                        <button>לא</button>
+                    </p>
+                    <button id="getOffers">קבל הצעות</button>
+                </form>
+                <div class="advertise">
+                    <img src="images/advertisment1.png">
                 </div>
-                <div class="advertise"></div>
             </div>
             <div id="leftSide">
                 <div id="searchResults">
                     <h3>נמצאו 3508 סוכני ביטוח</h3>
-                    <div id="#resultsFilter"></div>
+                    <section id="resultsFilter">
+                        <form>
+                            <label style="font-weight: bold;">מיין לפי
+                                <select style="color: red;">
+                                    <option value="">מחיר נמוך לגבוה</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </label>
+                        </form>
+                        <span>דירוג סוכן</span>
+                        <span>מספר מדרגים</span>
+                        <form style="float:left">
+                            <label>סינון לפי אזור:
+                                <select>
+                                    <option value="">כל האזורים</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </label>
+                        </form>
+                    </section>
                 </div>
                 <div class="record">
-                    <div class="recordpart1"></div>
-                    <div class="recordpart2"></div>
-                    <div class="recordpart3"></div>
+                    <div class="recordpart1">
+                        <img src="images/shita.png">
+                    </div>
+                    <div class="recordpart2">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p>
+                            <img src="images/location.png">פתח תקווה
+                            <span>
+                                <img src="images/stars.png">
+                            </span>
+                        </p>
+                    </div>
+                    <div class="recordpart3">
+                        <h3>483
+                            <span>₪</span>
+                        </h3>
+                        <p>פרמיה חודשית</p>
+                        <button>לרכישה</button>
+                    </div>
                 </div>
                 <div class="record">
-                    <div class="recordpart1"></div>
-                    <div class="recordpart2"></div>
-                    <div class="recordpart3"></div>
+                    <div class="recordpart1">
+                        <img src="images/shita.png">
+                    </div>
+                    <div class="recordpart2">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p>
+                            <img src="images/location.png">פתח תקווה
+                            <span>
+                                <img src="images/stars.png">
+                            </span>
+                        </p>
+                    </div>
+                    <div class="recordpart3">
+                        <h3>483
+                            <span>₪</span>
+                        </h3>
+                        <p>פרמיה חודשית</p>
+                        <button>לרכישה</button>
+                    </div>
                 </div>
                 <div class="record">
-                    <div class="recordpart1"></div>
-                    <div class="recordpart2"></div>
-                    <div class="recordpart3"></div>
+                    <div class="recordpart1">
+                        <img src="images/shita.png">
+                    </div>
+                    <div class="recordpart2">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p>
+                            <img src="images/location.png">פתח תקווה
+                            <span>
+                                <img src="images/stars.png">
+                            </span>
+                        </p>
+                    </div>
+                    <div class="recordpart3">
+                        <h3>483
+                            <span>₪</span>
+                        </h3>
+                        <p>פרמיה חודשית</p>
+                        <button>לרכישה</button>
+                    </div>
                 </div>
                 <div class="record">
-                    <div class="recordpart1"></div>
-                    <div class="recordpart2"></div>
-                    <div class="recordpart3"></div>
+                    <div class="recordpart1">
+                        <img src="images/shita.png">
+                    </div>
+                    <div class="recordpart2">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p>
+                            <img src="images/location.png">פתח תקווה
+                            <span>
+                                <img src="images/stars.png">
+                            </span>
+                        </p>
+                    </div>
+                    <div class="recordpart3">
+                        <h3>483
+                            <span>₪</span>
+                        </h3>
+                        <p>פרמיה חודשית</p>
+                        <button>לרכישה</button>
+                    </div>
                 </div>
                 <div class="record">
-                    <div class="recordpart1"></div>
-                    <div class="recordpart2"></div>
-                    <div class="recordpart3"></div>
+                    <div class="recordpart1">
+                        <img src="images/shita.png">
+                    </div>
+                    <div class="recordpart2">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p>
+                            <img src="images/location.png">פתח תקווה
+                            <span>
+                                <img src="images/stars.png">
+                            </span>
+                        </p>
+                    </div>
+                    <div class="recordpart3">
+                        <h3>483
+                            <span>₪</span>
+                        </h3>
+                        <p>פרמיה חודשית</p>
+                        <button>לרכישה</button>
+                    </div>
                 </div>
                 <div class="record">
-                    <div class="recordpart1"></div>
-                    <div class="recordpart2"></div>
-                    <div class="recordpart3"></div>
+                    <div class="recordpart1">
+                        <img src="images/shita.png">
+                    </div>
+                    <div class="recordpart2">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p>
+                            <img src="images/location.png">פתח תקווה
+                            <span>
+                                <img src="images/stars.png">
+                            </span>
+                        </p>
+                    </div>
+                    <div class="recordpart3">
+                        <h3>483
+                            <span>₪</span>
+                        </h3>
+                        <p>פרמיה חודשית</p>
+                        <button>לרכישה</button>
+                    </div>
                 </div>
                 <div class="record">
-                    <div class="recordpart1"></div>
-                    <div class="recordpart2"></div>
-                    <div class="recordpart3"></div>
+                    <div class="recordpart1">
+                        <img src="images/shita.png">
+                    </div>
+                    <div class="recordpart2">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p>
+                            <img src="images/location.png">פתח תקווה
+                            <span>
+                                <img src="images/stars.png">
+                            </span>
+                        </p>
+                    </div>
+                    <div class="recordpart3">
+                        <h3>483
+                            <span>₪</span>
+                        </h3>
+                        <p>פרמיה חודשית</p>
+                        <button>לרכישה</button>
+                    </div>
+                </div>
+                <div class="record">
+                    <div class="recordpart1">
+                        <img src="images/shita.png">
+                    </div>
+                    <div class="recordpart2">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p>
+                            <img src="images/location.png">פתח תקווה
+                            <span>
+                                <img src="images/stars.png">
+                            </span>
+                        </p>
+                    </div>
+                    <div class="recordpart3">
+                        <h3>483
+                            <span>₪</span>
+                        </h3>
+                        <p>פרמיה חודשית</p>
+                        <button>לרכישה</button>
+                    </div>
+                </div>
+                <div class="record">
+                    <div class="recordpart1">
+                        <img src="images/shita.png">
+                    </div>
+                    <div class="recordpart2">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p>
+                            <img src="images/location.png">פתח תקווה
+                            <span>
+                                <img src="images/stars.png">
+                            </span>
+                        </p>
+                    </div>
+                    <div class="recordpart3">
+                        <h3>483
+                            <span>₪</span>
+                        </h3>
+                        <p>פרמיה חודשית</p>
+                        <button>לרכישה</button>
+                    </div>
+                </div>
+                <div class="record">
+                    <div class="recordpart1">
+                        <img src="images/shita.png">
+                    </div>
+                    <div class="recordpart2">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p>
+                            <img src="images/location.png">פתח תקווה
+                            <span>
+                                <img src="images/stars.png">
+                            </span>
+                        </p>
+                    </div>
+                    <div class="recordpart3">
+                        <h3>483
+                            <span>₪</span>
+                        </h3>
+                        <p>פרמיה חודשית</p>
+                        <button>לרכישה</button>
+                    </div>
                 </div>
             </div>
             <div id="searchPages">
@@ -126,8 +411,41 @@
         </main>
     </div>
     <footer>
-        <div id="pageTree"></div>
-        <div id="designedBy"></div>
+        <div id="pageTree">
+            <div>
+                <img src="images/compie.png">
+                <p>לפרומי בלוף קינץ תתיח לרעת. לת צשחמי צש ליא, מנסטו צמחל ליקו נובי, צמוקי בלוקריאה מככדש אד</p>
+            </div>
+            <div>
+                <h5>סוכנים</h5><br>
+                <p>הרשמת למערכת</p>
+                <p>צור קשר</p>
+                <button>כניסת סוכנים</button>
+            </div>
+            <div>
+                <h5>פרטים חשובים</h5><br>
+                <p>תנאי שימוש</p>
+                <p>מדיניות פרטיות</p>
+                <p>צור קשר</p>
+            </div>
+            <div>
+                <h5>עקבו אחרינו</h5><br>
+                <p>פייסבוק</p>
+                <p>טוויטר</p>
+                <p>גוגל פלוס</p>
+            </div>
+            <div>
+                <h5>השאר מעודכן</h5><br>
+                <p>הירשם לרשימה התפוצה שלנו ואנו נדאג לעדכן אותך בכל המידע החשוב.</p>
+                <button>כתובת הדוא״ל שלך</button>
+            </div>
+        </div>
+        <div id="designedBy">
+            <p style="float:right">כל הזכויות שמורות</p>
+            <p style="float:left">UI & DESIGN BY:
+                <span style="font-weight:bold">AVIOZ</span>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
