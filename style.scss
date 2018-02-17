@@ -1,40 +1,57 @@
+//custom class and vars
 $font-stack: Helvetica, sans-serif;
 $primary-color: pink;
+.myHeadline{
+  height: 54px;
+  line-height: 54px;
+  background-color: #f8fafa;
+  color: #4f788a;
+  padding-right:20px;
+  font-weight: bold;
+}
 
+
+//page css
 body{
   direction: rtl;
+  font-family: Helvetica, serif;
 }
 
 header{
   width: 100%;
-  height: 300px;
-  background-color: greenyellow;
+  height: 360px;
+  background-color: lightblue;
 
   #topbar{
-    width: 100%;
-    height:40px;
-    display:flex;
-    flex-direction: row;
+    width: 70%;
+    height:35px;
+    padding-top:15px;
+    margin: auto;
 
-    div{
-      background-color: aqua;
-      width:5%;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    #rightTopBar{
+      display:flex;
+      flex-direction: row;
+      float: right;
     }
+
+    #leftTopBar{
+      display: flex;
+      flex-direction: row-reverse;
+      float: left;
+    }
+
   }
   #introduction{
     width:50%;
     margin:auto;
+    text-align: center;
 
     h1 {
-      font: 100% $font-stack;
-      color: $primary-color;
-      font-size: 30px;
-      text-align: center;
-      margin: 10px;
+      font-size: 55px;
+      margin-top: 30px;
+    }
+    p {
+      margin-top:25px;
     }
   }
 
@@ -42,6 +59,7 @@ header{
 
 #wrapper {
   width:100%;
+  background-color: #fafcfd;
 
   main {
     width: 70%;
@@ -52,12 +70,46 @@ header{
     display: grid;
     grid-column-gap: 20px;
     grid-template-columns: auto auto auto;
-    background-color: darkgreen;
+
+    #breadcrumbs{
+      background-color: #fafcfd;
+      padding-top:20px;
+      padding-bottom: 20px;
+      height:38px;
+      display: inline-grid;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-template-columns: auto auto auto auto;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      div{
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      p {
+        display: inline-block;
+        font-size: 40px;
+        position: relative;
+        bottom: 7px;
+      }
+
+      .ptext{
+        display: inline-block;
+        font-size: 15px;
+        width:100px;
+      }
+
+    }
 
     #rightSide {
-      background-color: orange;
       grid-column-start: 1;
       grid-column-end: 2;
+
+      h3{
+        @extend .myHeadline;
+      }
 
       div {
         width: 100%;
@@ -65,31 +117,45 @@ header{
       }
 
       #filterbar {
-        background-color: black;
-        height: 400px;
+        background-color: #ffffff;
+        height: 934px;
       }
 
       .advertise{
         background-color: red;
-        height: 200px;
+        height: 457px;
       }
 
     }
 
     #leftSide {
-      background-color: brown;
       grid-column-start: 2;
       grid-column-end: 4;
+
+      #searchResults{
+        height:100px;
+        margin-bottom: 14px;
+        background-color: #ffffff;
+
+        h3{
+          @extend .myHeadline;
+        }
+
+        #resultsFilter{
+
+        }
+      }
 
       .record {
         display: flex;
         flex-direction: row;
         background-color: red;
-        height: 120px;
+        height: 143px;
+        margin-bottom: 14px;
 
         .recordpart1 {
           flex: 20%;
-          background-color: white;
+          background-color: honeydew;
         }
         .recordpart2 {
           flex: 30%;
@@ -101,6 +167,23 @@ header{
         }
       }
     }
+
+    #searchPages{
+      margin-top: 22px;
+      margin-bottom: 355px;
+      height:34px;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      display: flex;
+      flex-direction: row-reverse;
+
+      button{
+        width:34px;
+        height:34px;
+        margin-right: 5px;
+        font-weight: bold;
+      }
+    }
   }
 }
 
@@ -108,6 +191,106 @@ header{
 footer{
   display: grid;
   width: 100%;
-  height: 200px;
-  background-color: lightgoldenrodyellow;
+  height: 286px;
+  background-color: #2a394d;
+
+  #pageTree{
+    height: 240px;
+    background-color: #33455d;
+  }
+}
+
+
+// external css, arrow button css
+.arrow {
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  position:relative;
+  bottom:15px;
+}
+
+.arrow a {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.arrow a:hover .leftarrow{
+  border: 0.1em solid #e74c3c;
+}
+
+.arrow a:hover .leftarrow:after {
+  border-top: 0.1em solid #e74c3c;
+  border-right: 0.1em solid #e74c3c;
+}
+
+.leftarrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin-right: 0.1em;
+}
+
+.leftarrow:after {
+  content: '';
+  display: inline-block;
+  margin-top: 0.4em;
+  margin-left: 0.2em;
+  width: 0.4em;
+  height: 0.4em;
+  border-top: 0.1em solid #333;
+  border-right: 0.1em solid #333;
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+
+// media queries
+@media only screen and (max-width: 1400px) {
+  #wrapper {
+    main {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  header{
+    height:240px;
+
+    #introduction{
+      width: 80%;
+
+      h1{
+        margin:0;
+        font-size: 40px;
+      }
+    }
+
+  }
+
+  #topbar{
+    display:none;
+  }
+
+  #wrapper {
+    main {
+      #breadcrumbs {
+        display: none;
+      }
+
+      #rightSide{
+        display: none;
+      }
+
+      #leftSide {
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+    }
+  }
 }
