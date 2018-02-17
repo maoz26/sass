@@ -34,6 +34,9 @@ header {
       display: flex;
       flex-direction: row;
       float: right; }
+      header #topbar #rightTopBar label img {
+        position: relative;
+        right: 10px; }
       header #topbar #rightTopBar #insurance {
         background-color: transparent;
         border: none;
@@ -300,7 +303,7 @@ footer {
     width: 95%; } }
 @media only screen and (max-width: 980px) {
   header {
-    height: 240px; }
+    height: 200px; }
     header #introduction {
       width: 80%; }
       header #introduction h1 {

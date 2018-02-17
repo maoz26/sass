@@ -48,6 +48,12 @@ header{
       flex-direction: row;
       float: right;
 
+      label{
+        img{
+          position:relative;
+          right:10px;
+        }
+      }
       #insurance{
         background-color: transparent;
         border: none;
@@ -449,7 +455,7 @@ footer{
 
 @media only screen and (max-width: 980px) {
   header{
-    height:240px;
+    height:200px;
 
     #introduction{
       width: 80%;
