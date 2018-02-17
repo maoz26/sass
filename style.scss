@@ -1,6 +1,9 @@
 //custom class and vars
 $font-stack: Helvetica, sans-serif;
-$primary-color: pink;
+
+$myBorder: 1px solid #d9e4ea;
+$myTextColor: #9cb3bd;
+
 .myHeadline{
   height: 54px;
   line-height: 54px;
@@ -27,6 +30,7 @@ header{
     height:35px;
     padding-top:15px;
     margin: auto;
+
 
     #rightTopBar{
       display:flex;
@@ -107,6 +111,7 @@ header{
       grid-column-start: 1;
       grid-column-end: 2;
 
+
       h3{
         @extend .myHeadline;
       }
@@ -119,11 +124,13 @@ header{
       #filterbar {
         background-color: #ffffff;
         height: 934px;
+        border: $myBorder;
       }
 
       .advertise{
         background-color: red;
         height: 457px;
+        border: $myBorder;
       }
 
     }
@@ -136,6 +143,7 @@ header{
         height:100px;
         margin-bottom: 14px;
         background-color: #ffffff;
+        border: $myBorder;
 
         h3{
           @extend .myHeadline;
@@ -152,6 +160,7 @@ header{
         background-color: red;
         height: 143px;
         margin-bottom: 14px;
+        border: $myBorder;
 
         .recordpart1 {
           flex: 20%;
@@ -252,7 +261,7 @@ footer{
 @media only screen and (max-width: 1400px) {
   #wrapper {
     main {
-      width: 100%;
+      width: 95%;
     }
   }
 }
@@ -289,6 +298,13 @@ footer{
       #leftSide {
         grid-column-start: 1;
         grid-column-end: 4;
+      }
+
+      #searchPages {
+        margin-top: 22px;
+        margin-bottom: 100px;
+        grid-column-start: 2;
+        grid-column-end: 3;
       }
 
     }

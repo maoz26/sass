@@ -80,23 +80,27 @@ header {
         margin-bottom: 10px; }
       #wrapper main #rightSide #filterbar {
         background-color: #ffffff;
-        height: 934px; }
+        height: 934px;
+        border: 1px solid #d9e4ea; }
       #wrapper main #rightSide .advertise {
         background-color: red;
-        height: 457px; }
+        height: 457px;
+        border: 1px solid #d9e4ea; }
     #wrapper main #leftSide {
       grid-column-start: 2;
       grid-column-end: 4; }
       #wrapper main #leftSide #searchResults {
         height: 100px;
         margin-bottom: 14px;
-        background-color: #ffffff; }
+        background-color: #ffffff;
+        border: 1px solid #d9e4ea; }
       #wrapper main #leftSide .record {
         display: flex;
         flex-direction: row;
         background-color: red;
         height: 143px;
-        margin-bottom: 14px; }
+        margin-bottom: 14px;
+        border: 1px solid #d9e4ea; }
         #wrapper main #leftSide .record .recordpart1 {
           flex: 20%;
           background-color: honeydew; }
@@ -170,7 +174,7 @@ footer {
 
 @media only screen and (max-width: 1400px) {
   #wrapper main {
-    width: 100%; } }
+    width: 95%; } }
 @media only screen and (max-width: 980px) {
   header {
     height: 240px; }
@@ -189,6 +193,11 @@ footer {
     display: none; }
   #wrapper main #leftSide {
     grid-column-start: 1;
-    grid-column-end: 4; } }
+    grid-column-end: 4; }
+  #wrapper main #searchPages {
+    margin-top: 22px;
+    margin-bottom: 100px;
+    grid-column-start: 2;
+    grid-column-end: 3; } }
 
 /*# sourceMappingURL=style.css.map */
