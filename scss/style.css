@@ -154,6 +154,9 @@ header {
       grid-template-columns: auto auto auto auto;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px; }
+      #wrapper main #breadcrumbs #lastBread {
+        position: relative;
+        right: 30px; }
       #wrapper main #breadcrumbs div {
         margin-right: 8px; }
         #wrapper main #breadcrumbs div img {
@@ -318,7 +321,9 @@ header {
             line-height: 1.5;
             padding-top: 15px; }
             #wrapper main #leftSide .record .recordpart2 p span {
-              float: left; }
+              float: left;
+              position: relative;
+              bottom: -10px; }
               #wrapper main #leftSide .record .recordpart2 p span img {
                 width: 100%;
                 height: auto; }
@@ -381,34 +386,49 @@ footer {
   footer #pageTree {
     height: 240px;
     background-color: #33455d;
-    display: flex;
-    flex-direction: row;
-    padding-left: 20%;
-    padding-right: 20%; }
-    footer #pageTree button {
-      border-radius: 15px;
-      width: 80%;
-      height: 34px;
-      border: 0;
-      margin-top: 5px;
-      color: #313d42;
-      background-color: #eef4f7; }
-    footer #pageTree div {
-      height: 130px;
-      max-width: 300px;
-      min-width: 140px;
-      margin-bottom: 50px;
-      margin-top: 50px;
-      padding-left: 30px;
-      padding-right: 30px;
-      color: white; }
-      footer #pageTree div img {
-        margin-bottom: 10px; }
-    footer #pageTree h5 {
-      font-weight: bold;
-      padding-right: 0; }
-    footer #pageTree p {
-      margin-bottom: 7px; }
+    width: 100%; }
+    footer #pageTree #treeContainer {
+      display: flex;
+      flex-direction: row;
+      width: 60%;
+      margin: auto; }
+      footer #pageTree #treeContainer button {
+        border-radius: 15px;
+        width: 80%;
+        height: 34px;
+        border: 0;
+        margin-top: 5px;
+        color: #313d42;
+        background-color: #eef4f7; }
+      footer #pageTree #treeContainer div {
+        height: 130px;
+        width: 120px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: white; }
+        footer #pageTree #treeContainer div img {
+          margin-bottom: 10px; }
+      footer #pageTree #treeContainer .footer1 {
+        width: 22%;
+        padding-right: 0; }
+      footer #pageTree #treeContainer .footer2 {
+        width: 15%;
+        border-right: 1px solid aliceblue; }
+      footer #pageTree #treeContainer .footer3 {
+        width: 15%; }
+      footer #pageTree #treeContainer .footer4 {
+        width: 15%; }
+      footer #pageTree #treeContainer .footer5 {
+        width: 33%;
+        padding-left: 0;
+        border-right: 1px solid aliceblue; }
+      footer #pageTree #treeContainer h5 {
+        font-weight: bold;
+        padding-right: 0; }
+      footer #pageTree #treeContainer p {
+        margin-bottom: 7px; }
   footer #designedBy {
     width: 60%;
     padding-right: 20%;
@@ -461,16 +481,27 @@ footer {
 
 @media only screen and (max-width: 1500px) {
   .arrow {
-    display: none; } }
-@media only screen and (max-width: 1250px) {
+    display: none; }
+
   #wrapper main {
     width: 80%; }
 
   header #topbar {
-    width: 80%; } }
+    width: 80%; }
+
+  #treeContainer {
+    width: 80% !important; } }
+@media only screen and (max-width: 1250px) {
+  #wrapper main #breadcrumbs #lastBread {
+    right: 0; } }
 @media only screen and (max-width: 980px) {
+  #wrapper main {
+    width: 80%; }
+
   header {
     height: 220px; }
+    header #topbar {
+      width: 80%; }
     header #topbar {
       background-color: white;
       width: 100%;
@@ -500,6 +531,10 @@ footer {
     top: 0;
     width: 100%; }
     #wrapper main #breadcrumbs {
+      display: none; }
+    #wrapper main #leftCorner {
+      display: none; }
+    #wrapper main #rightCorner {
       display: none; }
     #wrapper main #rightSide {
       display: none; }
@@ -548,9 +583,12 @@ footer {
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
-    border-right: 0 !important; }
+    border-right: 0 !important;
+    width: 100%; }
     footer #pageTree div:last-child button {
-      width: 100%; } }
+      width: 100%; }
+  footer #pageTree .footer5 {
+    width: 100% !important; } }
 @media only screen and (max-width: 550px) {
   #designedBy p {
     font-size: 10px; } }

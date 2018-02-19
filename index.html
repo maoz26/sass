@@ -78,7 +78,7 @@
                         </a>
                     </div>
                 </div>
-                <div style="position:relative; right:40px;">
+                <div id="lastBread">
                     <img src="images/breadicon.png">
                     <p>4</p>
                     <p class="ptext">ממלאים פרטים להצעת ביטוח</p>
@@ -90,10 +90,10 @@
                     <h4>לקבלת הצעת מחיר מותאמת אישית אנא הזן את הפרטים הבאים</h4>
                     <div id="selectArea">
                         <label><select>
-                                <p><option value="">בחר את סוג הביטוח</option></p>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
+                            <option value="">בחר את סוג הביטוח</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
                         </select></label>
                         <label><select>
                             <option value="">תאריך תחילת הביטוח</option>
@@ -183,7 +183,6 @@
                             </label>
                         </p>
                     </div>
-
                     <button id="getOffers">קבל הצעות</button>
                 </form>
                 <div class="advertise">
@@ -477,38 +476,40 @@
     </div>
     <footer>
         <div id="pageTree">
-            <div>
-                <img src="images/compie.png">
-                <p>לפרומי בלוף קינץ תתיח לרעת. לת צשחמי צש ליא, מנסטו צמחל ליקו נובי, צמוקי בלוקריאה מככדש אד</p>
-            </div>
-            <div style="border-right:1px solid aliceblue">
-                <h5>סוכנים</h5><br>
-                <p>הרשמת למערכת</p>
-                <p>צור קשר</p>
-                <button>כניסת סוכנים</button>
-            </div>
-            <div>
-                <h5>פרטים חשובים</h5><br>
-                <p>תנאי שימוש</p>
-                <p>מדיניות פרטיות</p>
-                <p>צור קשר</p>
-            </div>
-            <div>
-                <h5>עקבו אחרינו</h5><br>
-                <p>פייסבוק</p>
-                <p>טוויטר</p>
-                <p>גוגל פלוס</p>
-            </div>
-            <div style="padding-left: 0; border-right:1px solid aliceblue;">
-                <h5>השאר מעודכן</h5><br>
-                <p>הירשם לרשימה התפוצה שלנו ואנו נדאג לעדכן אותך בכל המידע החשוב.</p>
-                <button>כתובת הדוא״ל שלך</button>
+            <div id="treeContainer">
+                <div class="footer1">
+                    <img src="images/compie.png">
+                    <p>לפרומי בלוף קינץ תתיח לרעת. לת צשחמי צש ליא, מנסטו צמחל ליקו נובי, צמוקי בלוקריאה מככדש אד</p>
+                </div>
+                <div class="footer2">
+                    <h5>סוכנים</h5><br>
+                    <p>הרשמת למערכת</p>
+                    <p>צור קשר</p>
+                    <button>כניסת סוכנים</button>
+                </div>
+                <div class="footer3">
+                    <h5>פרטים חשובים</h5><br>
+                    <p>תנאי שימוש</p>
+                    <p>מדיניות פרטיות</p>
+                    <p>צור קשר</p>
+                </div>
+                <div class="footer4">
+                    <h5>עקבו אחרינו</h5><br>
+                    <p>פייסבוק</p>
+                    <p>טוויטר</p>
+                    <p>גוגל פלוס</p>
+                </div>
+                <div class="footer5">
+                    <h5>השאר מעודכן</h5><br>
+                    <p>הירשם לרשימה התפוצה שלנו ואנו נדאג לעדכן אותך בכל המידע החשוב.</p>
+                    <button>כתובת הדוא״ל שלך</button>
+                </div>
             </div>
         </div>
         <div id="designedBy">
             <p style="float:right">כל הזכויות שמורות</p>
-            <p style="float:left">UI & DESIGN BY:
-                <span style="font-weight:bold">AVIOZ</span>
+            <p style="float:left;">ui & design by:
+                <span style="font-weight:bold">Avioz</span>
             </p>
         </div>
     </footer>
