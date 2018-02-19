@@ -4,8 +4,8 @@
   src: url("../fonts/slick/slick.woff"); }
 .centerImg, #wrapper main #rightSide .advertise img, #wrapper main #leftSide .record .recordpart1 img {
   display: block;
-  width: 95%;
-  margin: 5px auto; }
+  width: 92%;
+  margin: 10px auto; }
 
 .myHeadline, #wrapper main #rightSide h3, #wrapper main #leftSide #searchResults h3 {
   height: 54px;
@@ -95,8 +95,8 @@ header {
       letter-spacing: -1px; }
     header #introduction p {
       font-weight: bold;
-      margin-top: 18px;
-      font-size: 20px;
+      margin-top: 16px;
+      font-size: 21px;
       line-height: 1.5; }
     header #introduction img {
       position: relative;
@@ -147,7 +147,7 @@ header {
       background-color: #fafcfd;
       padding-top: 20px;
       padding-bottom: 20px;
-      height: 38px;
+      height: 36px;
       display: inline-grid;
       grid-column-start: 1;
       grid-column-end: 4;
@@ -158,7 +158,7 @@ header {
         margin-right: 8px; }
         #wrapper main #breadcrumbs div img {
           position: relative;
-          right: 6px; }
+          right: 4px; }
       #wrapper main #breadcrumbs p {
         display: inline-block;
         font-size: 40px;
@@ -167,7 +167,9 @@ header {
       #wrapper main #breadcrumbs .ptext {
         display: inline-block;
         font-size: 15px;
-        width: 100px; }
+        width: 100px;
+        position: relative;
+        bottom: 10px; }
     #wrapper main #rightSide {
       grid-column-start: 1;
       grid-column-end: 2;
@@ -186,7 +188,7 @@ header {
       #wrapper main #rightSide #selectArea {
         margin: auto;
         width: 86%;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         border-bottom: 1px solid #d9e4ea; }
         #wrapper main #rightSide #selectArea select {
           border: 1px solid lightgray;
@@ -195,11 +197,14 @@ header {
           margin-bottom: 10px;
           width: 100%;
           height: 38px;
-          padding: 10px;
+          padding: 11px;
           color: #608090;
+          position: relative;
+          font-size: 14px;
+          top: 3px;
           -webkit-appearance: none;
           background: url("../images/dropdown3.png") no-repeat;
-          background-position: 10px 15px; }
+          background-position: 12px 15px; }
       #wrapper main #rightSide #questionsArea {
         margin: auto;
         width: 86%; }
@@ -211,47 +216,44 @@ header {
           display: flex;
           font-size: 14px; }
           #wrapper main #rightSide #questionsArea p span {
-            width: 180px;
+            width: 70%;
             display: inline-block;
             float: right;
             margin-left: 5px; }
-          #wrapper main #rightSide #questionsArea p .yesorno {
-            width: 160px;
-            display: block; }
-            #wrapper main #rightSide #questionsArea p .yesorno input {
-              width: 34px;
-              height: 34px; }
-            #wrapper main #rightSide #questionsArea p .yesorno .yesRadio {
-              position: relative;
+          #wrapper main #rightSide #questionsArea p label {
+            border: 1px solid lightgray;
+            border-radius: 4px;
+            width: 38px;
+            height: 38px;
+            margin-right: 5px;
+            position: relative; }
+            #wrapper main #rightSide #questionsArea p label a {
+              position: absolute;
               top: 10px;
-              right: 50px; }
-            #wrapper main #rightSide #questionsArea p .yesorno .noRadio {
+              text-align: center;
+              width: 38px; }
+            #wrapper main #rightSide #questionsArea p label input {
               position: relative;
-              top: -30px;
-              left: -92px; }
-            #wrapper main #rightSide #questionsArea p .yesorno span {
-              width: 30px; }
+              opacity: 0; }
       #wrapper main #rightSide #getOffers {
         width: 70%;
         height: 44px;
         display: block;
-        margin: 15px auto;
+        margin: auto;
         color: white;
-        margin-top: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         font-weight: bold;
         font-size: 16px;
         border: 0; }
-      #wrapper main #rightSide div {
-        width: 100%;
-        margin-bottom: 10px; }
       #wrapper main #rightSide #filterbar {
         background-color: #ffffff;
-        height: 934px;
         border: 1px solid #d9e4ea; }
       #wrapper main #rightSide .advertise {
-        margin-top: 10px;
+        margin-top: 15px;
         background-color: white;
-        border: 1px solid #d9e4ea; }
+        border: 1px solid #d9e4ea;
+        border-radius: 4px; }
     #wrapper main #leftSide {
       grid-column-start: 2;
       grid-column-end: 4; }
@@ -303,7 +305,8 @@ header {
             margin-right: 15px;
             width: 90%;
             height: auto;
-            border: 1px solid #d9e4ea; }
+            border: 1px solid #d9e4ea;
+            border-radius: 4px; }
         #wrapper main #leftSide .record .recordpart2 {
           flex: 50%;
           margin: 15px; }
@@ -362,10 +365,12 @@ header {
       display: flex;
       flex-direction: row-reverse; }
       #wrapper main #searchPages button {
+        border: 1px solid lightgray;
         width: 34px;
         height: 34px;
+        background-color: #fcfcfc;
         margin-right: 5px;
-        font-weight: bold; }
+        font-size: 15px; }
 
 footer {
   display: grid;
@@ -389,19 +394,19 @@ footer {
       color: #313d42;
       background-color: #eef4f7; }
     footer #pageTree div {
+      height: 130px;
       max-width: 300px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      margin-left: 30px;
-      margin-right: 10px;
-      color: white;
-      padding-top: 50px; }
+      min-width: 140px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+      color: white; }
       footer #pageTree div img {
         margin-bottom: 10px; }
-    footer #pageTree div:last-child {
-      margin-left: 0; }
     footer #pageTree h5 {
-      font-weight: bold; }
+      font-weight: bold;
+      padding-right: 0; }
     footer #pageTree p {
       margin-bottom: 7px; }
   footer #designedBy {
@@ -512,6 +517,8 @@ footer {
         bottom: 5px; }
         #wrapper main #leftSide #searchResults .formfilter form {
           padding: 15px; }
+          #wrapper main #leftSide #searchResults .formfilter form label {
+            border-right: 0 !important; }
       #wrapper main #leftSide .record .recordpart1 img {
         width: 75%; }
       #wrapper main #leftSide .record .recordpart2 {
@@ -539,7 +546,9 @@ footer {
   footer #pageTree div:last-child {
     display: block;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 50px;
+    border-right: 0 !important; }
     footer #pageTree div:last-child button {
       width: 100%; } }
 @media only screen and (max-width: 550px) {
