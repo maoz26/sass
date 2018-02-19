@@ -1,0 +1,46 @@
+@media only screen and (max-width: 980px) {
+  header {
+    height: 200px; }
+    header #introduction {
+      width: 80%; }
+      header #introduction h1 {
+        margin: 0;
+        font-size: 40px; }
+
+  #topbar {
+    display: none; }
+
+  #wrapper main {
+    top: 0; }
+    #wrapper main #breadcrumbs {
+      display: none; }
+    #wrapper main #rightSide {
+      display: none; }
+    #wrapper main #leftSide {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      min-width: 0; }
+      #wrapper main #leftSide #searchResults {
+        display: none; }
+      #wrapper main #leftSide .record .recordpart2 {
+        margin-left: 0;
+        margin-right: 5px; }
+        #wrapper main #leftSide .record .recordpart2 p span {
+          width: 55px; }
+          #wrapper main #leftSide .record .recordpart2 p span img {
+            height: auto;
+            float: left; }
+      #wrapper main #leftSide .record .recordpart3 h3 {
+        font-size: 18px; }
+    #wrapper main #searchPages {
+      margin-top: 22px;
+      margin-bottom: 100px;
+      grid-column-start: 2;
+      grid-column-end: 3; }
+  #wrapper p {
+    font-size: 10px; }
+
+  footer {
+    display: none; } }
+
+/*# sourceMappingURL=responsive.css.map */
