@@ -34,7 +34,26 @@ module.exports = {
                     includePaths: ["./style.scss"]
                 }
             }]
-        }]
+        },
+        {
+            test: /\.(ttf|eot|woff|woff2)$/,
+            loader: "file-loader",
+            options: {
+                name: "fonts/[name].[ext]",
+            },
+        },
+        {
+            test: /\.(png|jpg|gif)$/,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        name: "images/[name].[ext]"
+                    }
+                }
+            ]
+        }
+        ]
     },
     plugins: [
         new ExtractTextPlugin('style.css')

@@ -11,7 +11,7 @@
     <header>
         <div id="topbar">
             <div id="rightTopBar">
-                <div><img src="images/logo.png"></div>
+                <div id="topLogo"></div>
                 <form>
                     <label><img src="images/caoch.png">
                         <select id="insurance">
@@ -21,9 +21,11 @@
                             <option value="">3</option>
                         </select>
                     </label>
-                    <img src="images/verticalLine.png">
+                    <div class="verticalLine"></div>
                 </form>
-                <div><img src="images/search.png"></div>
+                <div id="searchBar">
+                    <img src="images/search.png">
+                </div>
             </div>
             <div id="leftTopBar">
                 <div>
@@ -31,18 +33,20 @@
                 </div>
                 <div>
                     <img src="images/mail.png">
-                    <img src="images/verticalLine.png">
+                    <div class="verticalLine2"></div>
                 </div>
             </div>
         </div>
         <div id="introduction">
-            <h1>ביטוח<img src="images/car.png">רכב</h1>
-            <p>על מנת שתוכל לנסוע על הכביש בלי דאגות תן לנו להתאים עבורך את הפוליסה הטובה ביותר עם כיסויים מקיפים במחירים מנצחים ממגוון סוכני הביטוח
-                ושתהיה לכם נסיעה טובה.</p>
+            <h1>ביטוח<img src="images/couchBig.png">דירה</h1>
+            <p>על מנת שתוכל לנסוע על הכביש בלי דאגות תן לנו להתאים עבורך את הפוליסה הטובה ביותר עם כיסויים מקיפים במחירים מנצחים ממגוון סוכני הביטוח ושתהיה לכם נסיעה טובה.</p>
+            <p id="priceAshaf">אשף המחיר</p>
         </div>
     </header>
     <div id="wrapper">
         <main>
+            <div id="leftCorner"></div>
+            <div id="rightCorner"></div>
             <div id="breadcrumbs">
                 <div>
                     <img src="images/breadicon.png">
@@ -83,12 +87,10 @@
             <div id="rightSide">
                 <form id="filterbar">
                     <h3>אשף המחיר</h3>
-                    <h4>לקבלת הצעת מחיר מותאמת אישית אנא הזן
-                        את הפרטים הבאים
-                    </h4>
+                    <h4>לקבלת הצעת מחיר מותאמת אישית אנא הזן את הפרטים הבאים</h4>
                     <div id="selectArea">
                         <label><select>
-                                <option value="">בחר את סוג הביטוח</option>
+                                <p><option value="">בחר את סוג הביטוח</option></p>
                                 <option value="">1</option>
                                 <option value="">2</option>
                                 <option value="">3</option>
@@ -124,26 +126,54 @@
                             <option value="">3</option>
                         </select></label>
                     </div>
-                    <p><span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
-                        <button>כן</button>
-                        <button>לא</button>
-                    </p>
-                    <p><span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
-                        <button>כן</button>
-                        <button>לא</button>
-                    </p>
-                    <p><span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
-                        <button>כן</button>
-                        <button>לא</button>
-                    </p>
-                    <p><span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
-                        <button>כן</button>
-                        <button>לא</button>
-                    </p>
-                    <p><span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
-                        <button>כן</button>
-                        <button>לא</button>
-                    </p>
+                    <div id="questionsArea">
+                        <p>
+                            <span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
+                            <a class="yesorno">
+                                <input type="checkbox">
+                                <span class="yesRadio">כן</span>
+                                <input type="checkbox">
+                                <span class="noRadio">לא</span>
+                            </a>
+                        </p>
+                        <p>
+                            <span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
+                            <a class="yesorno">
+                                <input type="checkbox">
+                                <span class="yesRadio">כן</span>
+                                <input type="checkbox">
+                                <span class="noRadio">לא</span>
+                            </a>
+                        </p>
+                        <p>
+                            <span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
+                            <a class="yesorno">
+                                <input type="checkbox">
+                                <span class="yesRadio">כן</span>
+                                <input type="checkbox">
+                                <span class="noRadio">לא</span>
+                            </a>
+                        </p>
+                        <p>
+                            <span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
+                            <a class="yesorno">
+                                <input type="checkbox">
+                                <span class="yesRadio">כן</span>
+                                <input type="checkbox">
+                                <span class="noRadio">לא</span>
+                            </a>
+                        </p>
+                        <p>
+                            <span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
+                            <a class="yesorno">
+                                <input type="checkbox">
+                                <span class="yesRadio">כן</span>
+                                <input type="checkbox">
+                                <span class="noRadio">לא</span>
+                            </a>
+                        </p>
+                    </div>
+
                     <button id="getOffers">קבל הצעות</button>
                 </form>
                 <div class="advertise">
@@ -154,28 +184,32 @@
                 <div id="searchResults">
                     <h3>נמצאו 3508 סוכני ביטוח</h3>
                     <section id="resultsFilter">
-                        <form>
-                            <label style="font-weight: bold;">מיין לפי
-                                <select style="color: red;">
-                                    <option value="">מחיר נמוך לגבוה</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                            </label>
-                        </form>
-                        <span>דירוג סוכן</span>
-                        <span>מספר מדרגים</span>
-                        <form style="float:left">
-                            <label>סינון לפי אזור:
-                                <select>
-                                    <option value="">כל האזורים</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                            </label>
-                        </form>
+                        <div class="formfilter">
+                            <form>
+                                <label style="font-weight: bold;">מיין לפי
+                                    <select style="color: red;">
+                                        <option value="">מחיר נמוך לגבוה</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </label>
+                            </form>
+                        </div>
+                        <div><span>דירוג סוכן</span></div>
+                        <div><span>מס' מדרגים</span></div>
+                        <div class="formfilter" style="float:left;">
+                            <form>
+                                <label>סינון לפי אזור:
+                                    <select>
+                                        <option value="">כל האזורים</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                    </select>
+                                </label>
+                            </form>
+                        </div>
                     </section>
                 </div>
                 <div class="record">
@@ -197,7 +231,9 @@
                             <span>₪</span>
                         </h3>
                         <p>פרמיה חודשית</p>
-                        <button>לרכישה</button>
+                        <button>
+                            <img src="images/shopping-cart.png"><span>לרכישה</span>
+                        </button>
                     </div>
                 </div>
                 <div class="record">
@@ -219,7 +255,9 @@
                             <span>₪</span>
                         </h3>
                         <p>פרמיה חודשית</p>
-                        <button>לרכישה</button>
+                        <button>
+                            <img src="images/shopping-cart.png"><span>לרכישה</span>
+                        </button>
                     </div>
                 </div>
                 <div class="record">
@@ -241,7 +279,9 @@
                             <span>₪</span>
                         </h3>
                         <p>פרמיה חודשית</p>
-                        <button>לרכישה</button>
+                        <button>
+                            <img src="images/shopping-cart.png"><span>לרכישה</span>
+                        </button>
                     </div>
                 </div>
                 <div class="record">
@@ -263,7 +303,9 @@
                             <span>₪</span>
                         </h3>
                         <p>פרמיה חודשית</p>
-                        <button>לרכישה</button>
+                        <button>
+                            <img src="images/shopping-cart.png"><span>לרכישה</span>
+                        </button>
                     </div>
                 </div>
                 <div class="record">
@@ -285,7 +327,9 @@
                             <span>₪</span>
                         </h3>
                         <p>פרמיה חודשית</p>
-                        <button>לרכישה</button>
+                        <button>
+                            <img src="images/shopping-cart.png"><span>לרכישה</span>
+                        </button>
                     </div>
                 </div>
                 <div class="record">
@@ -307,7 +351,9 @@
                             <span>₪</span>
                         </h3>
                         <p>פרמיה חודשית</p>
-                        <button>לרכישה</button>
+                        <button>
+                            <img src="images/shopping-cart.png"><span>לרכישה</span>
+                        </button>
                     </div>
                 </div>
                 <div class="record">
@@ -329,7 +375,9 @@
                             <span>₪</span>
                         </h3>
                         <p>פרמיה חודשית</p>
-                        <button>לרכישה</button>
+                        <button>
+                            <img src="images/shopping-cart.png"><span>לרכישה</span>
+                        </button>
                     </div>
                 </div>
                 <div class="record">
@@ -351,7 +399,9 @@
                             <span>₪</span>
                         </h3>
                         <p>פרמיה חודשית</p>
-                        <button>לרכישה</button>
+                        <button>
+                            <img src="images/shopping-cart.png"><span>לרכישה</span>
+                        </button>
                     </div>
                 </div>
                 <div class="record">
@@ -373,7 +423,9 @@
                             <span>₪</span>
                         </h3>
                         <p>פרמיה חודשית</p>
-                        <button>לרכישה</button>
+                        <button>
+                            <img src="images/shopping-cart.png"><span>לרכישה</span>
+                        </button>
                     </div>
                 </div>
                 <div class="record">
@@ -395,7 +447,9 @@
                             <span>₪</span>
                         </h3>
                         <p>פרמיה חודשית</p>
-                        <button>לרכישה</button>
+                        <button>
+                            <img src="images/shopping-cart.png"><span>לרכישה</span>
+                        </button>
                     </div>
                 </div>
             </div>

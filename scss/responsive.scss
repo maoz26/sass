@@ -1,0 +1,177 @@
+
+// media queries
+@media only screen and (max-width: 1500px) {
+  .arrow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #wrapper{
+    main {
+      width: 80%;
+    }
+  }
+  header{
+    #topbar{
+      width:80%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 980px) {
+
+  header{
+    height:220px;
+
+    #topbar{
+      background-color: white;
+      width:100%;
+      position: relative;
+      border-radius: 0;
+
+      #leftTopBar{
+        display: none;
+      }
+      form{
+        display: none;
+      }
+      #searchBar{
+        display: none;
+      }
+      #topLogo{
+        position:absolute;
+        left:15px;
+        top:10px;
+      }
+    }
+
+    #introduction{
+      width: 80%;
+
+      h1{
+        margin:0;
+        font-size: 40px;
+      }
+      p{
+        display: none;
+      }
+      #priceAshaf{
+        display: block;
+      }
+    }
+
+  }
+
+
+  #wrapper {
+    main {
+      top:0;
+      width: 100%;
+
+      #breadcrumbs {
+        display: none;
+      }
+
+      #rightSide{
+        display: none;
+      }
+
+      #leftSide {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        min-width: 0;
+
+        #searchResults{
+          div{
+            span{
+              display: none;
+            }
+          }
+
+        .formfilter{
+          width:45%;
+          border:1px solid lightgray;
+          padding:5px;
+          position: relative;
+          bottom:5px;
+
+          form{
+            padding: 15px;
+          }
+        }
+
+        }
+        .record{
+          .recordpart1{
+            img{
+              width:75%;
+            }
+          }
+          .recordpart2{
+            margin-left:0;
+            margin-right:5px;
+            p{
+              span{
+                width:55px;
+
+                img{
+                  height: auto;
+                  float:left;
+                }
+              }
+            }
+          }
+        }
+        .record{
+          .recordpart3{
+            h3{
+              font-size: 18px;
+            }
+            button{
+              span{
+                display:none;
+              }
+            }
+          }
+        }
+      }
+
+      #searchPages {
+        margin-top: 22px;
+        margin-bottom: 100px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+    }
+    p{
+      font-size: 10px;
+    }
+  }
+  footer{
+
+    #pageTree{
+      div{
+        display: none;
+      }
+      div:last-child{
+        display: block;
+        text-align: center;
+        margin:0 auto;
+        button{
+          width:100%;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #designedBy{
+    p{
+      font-size: 10px;
+    }
+  }
+}
