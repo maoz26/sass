@@ -29,12 +29,22 @@
           right:0;
         }
       }
+      #leftSide{
+        #searchResults{
+          #resultsFilter{
+            div{
+              span{
+                display:none;
+              }
+            }
+          }
+        }
+      }
     }
   }
-
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1000px) {
 
   #wrapper{
     main {
@@ -108,6 +118,7 @@
         min-width: 0;
 
         #searchResults{
+          text-align: center;
           div{
             span{
               display: none;
