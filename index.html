@@ -6,6 +6,7 @@
     <!--<link rel="stylesheet" type="text/css" href="style.css">-->
     <!--<link rel="stylesheet" type="text/css" href="reset.css">-->
     <script src="./dist/bundle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
@@ -86,7 +87,7 @@
             </div>
             <div id="rightSide">
                 <form id="filterbar">
-                    <h3>אשף המחיר</h3>
+                    <section><h3>אשף המחיר</h3></section>
                     <h4>לקבלת הצעת מחיר מותאמת אישית אנא הזן את הפרטים הבאים</h4>
                     <div id="selectArea">
                         <label><select>
@@ -127,63 +128,134 @@
                         </select></label>
                     </div>
                     <div id="questionsArea">
-                        <p>
-                            <span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
-                            <label>
-                                <a>כן</a>
-                                <input type="radio">
-                            </label>
-                            <label>
-                                <a>לא</a>
-                                <input type="radio">
-                            </label>
-                        </p>
-                        <p>
-                            <span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
-                            <label>
-                                <a>כן</a>
-                                <input type="radio">
-                            </label>
-                            <label>
-                                <a>לא</a>
-                                <input type="radio">
-                            </label>
-                        </p>
-                        <p>
-                            <span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
-                            <label>
-                                <a>כן</a>
-                                <input type="radio">
-                            </label>
-                            <label>
-                                <a>לא</a>
-                                <input type="radio">
-                            </label>
-                        </p>
-                        <p>
-                            <span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
-                            <label>
-                                <a>כן</a>
-                                <input type="radio">
-                            </label>
-                            <label>
-                                <a>לא</a>
-                                <input type="radio">
-                            </label>
-                        </p>
-                        <p>
-                            <span>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</span>
-                            <label>
-                                <a>כן</a>
-                                <input type="radio">
-                            </label>
-                            <label>
-                                <a>לא</a>
-                                <input type="radio">
-                            </label>
-                        </p>
+                        <form>
+                            <div class="question">
+                            <p>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</p>
+                            <div class="container">
+                                <div class="radio-tile-group">
+                                    <div class="input-container">
+                                        <input id="walk1" class="radio-button" type="radio" name="radio" />
+                                        <div class="radio-tile">
+                                            <div class="icon walk-icon">
+                                            </div>
+                                            <label for="walk1" class="radio-tile-label">כן</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-container">
+                                        <input id="bike1" class="radio-button" type="radio" name="radio" />
+                                        <div class="radio-tile">
+                                            <div class="icon bike-icon">
+                                            </div>
+                                            <label for="bike1" class="radio-tile-label">לא</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                        <form>
+                            <div class="question">
+                            <p>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</p>
+                            <div class="container">
+                                <div class="radio-tile-group">
+                                    <div class="input-container">
+                                        <input id="walk2" class="radio-button" type="radio" name="radio" />
+                                        <div class="radio-tile">
+                                            <div class="icon walk-icon">
+                                            </div>
+                                            <label for="walk2" class="radio-tile-label">כן</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-container">
+                                        <input id="bike2" class="radio-button" type="radio" name="radio" />
+                                        <div class="radio-tile">
+                                            <div class="icon bike-icon">
+                                            </div>
+                                            <label for="bike2" class="radio-tile-label">לא</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                        <form>
+                            <div class="question">
+                            <p>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</p>
+                            <div class="container">
+                                <div class="radio-tile-group">
+                                    <div class="input-container">
+                                        <input id="walk3" class="radio-button" type="radio" name="radio" />
+                                        <div class="radio-tile">
+                                            <div class="icon walk-icon">
+                                            </div>
+                                            <label for="walk3" class="radio-tile-label">כן</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-container">
+                                        <input id="bike3" class="radio-button" type="radio" name="radio" />
+                                        <div class="radio-tile">
+                                            <div class="icon bike-icon">
+                                            </div>
+                                            <label for="bike3" class="radio-tile-label">לא</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                        <form>
+                            <div class="question">
+                            <p>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</p>
+                            <div class="container">
+                                <div class="radio-tile-group">
+                                    <div class="input-container">
+                                        <input id="walk4" class="radio-button" type="radio" name="radio" />
+                                        <div class="radio-tile">
+                                            <div class="icon walk-icon">
+                                            </div>
+                                            <label for="walk4" class="radio-tile-label">כן</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-container">
+                                        <input id="bike4" class="radio-button" type="radio" name="radio" />
+                                        <div class="radio-tile">
+                                            <div class="icon bike-icon">
+                                            </div>
+                                            <label for="bike4" class="radio-tile-label">לא</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                        <form>
+                            <div class="question">
+                            <p>האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</p>
+                            <div class="container">
+                                <div class="radio-tile-group">
+                                    <div class="input-container">
+                                        <input id="walk5" class="radio-button" type="radio" name="radio" />
+                                        <div class="radio-tile">
+                                            <div class="icon walk-icon">
+                                            </div>
+                                            <label for="walk5" class="radio-tile-label">כן</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-container">
+                                        <input id="bike5" class="radio-button" type="radio" name="radio" />
+                                        <div class="radio-tile">
+                                            <div class="icon bike-icon">
+                                            </div>
+                                            <label for="bike5" class="radio-tile-label">לא</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                        <button id="getOffers">קבל הצעות</button>
                     </div>
-                    <button id="getOffers">קבל הצעות</button>
                 </form>
                 <div class="advertise">
                     <img src="images/BANNER.png">
@@ -191,11 +263,11 @@
             </div>
             <div id="leftSide">
                 <div id="searchResults">
-                    <h3>נמצאו 3508 סוכני ביטוח</h3>
+                    <h3>נמצאו<span style="font-size: 86.5%">&nbsp;3508&nbsp;</span>סוכני ביטוח</h3>
                     <section id="resultsFilter">
-                        <div class="formfilter">
+                        <div class="formfilter" id="rightFilter">
                             <form>
-                                <label style="font-weight: bold;">מיין לפי
+                                <label style="font-weight: bold;">מיין לפי:
                                     <select style="color: red;">
                                         <option value="">מחיר נמוך לגבוה</option>
                                         <option value="">1</option>
@@ -207,10 +279,10 @@
                         </div>
                         <div><span>דירוג סוכן</span></div>
                         <div><span>מס' מדרגים</span></div>
-                        <div class="formfilter" style="float:left;">
+                        <div class="formfilter" id="leftFilter">
                             <form>
-                                <label style="padding-right: 20px; border-right: 1px solid lightgray;">סינון לפי אזור:
-                                    <select>
+                                <label>סינון לפי אזור:
+                                    <select style="color:#4f788a;">
                                         <option value="">כל האזורים</option>
                                         <option value="">1</option>
                                         <option value="">2</option>
@@ -227,7 +299,7 @@
                     </div>
                     <div class="recordpart2">
                         <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
-                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p class="recordpart2text">״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
                         <p>
                             <img src="images/location.png">פתח תקווה
                             <span>
@@ -251,7 +323,7 @@
                     </div>
                     <div class="recordpart2">
                         <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
-                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p class="recordpart2text">״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
                         <p>
                             <img src="images/location.png">פתח תקווה
                             <span>
@@ -275,7 +347,7 @@
                     </div>
                     <div class="recordpart2">
                         <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
-                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p class="recordpart2text">״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
                         <p>
                             <img src="images/location.png">פתח תקווה
                             <span>
@@ -299,7 +371,7 @@
                     </div>
                     <div class="recordpart2">
                         <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
-                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p class="recordpart2text">״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
                         <p>
                             <img src="images/location.png">פתח תקווה
                             <span>
@@ -323,7 +395,7 @@
                     </div>
                     <div class="recordpart2">
                         <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
-                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p class="recordpart2text">״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
                         <p>
                             <img src="images/location.png">פתח תקווה
                             <span>
@@ -347,7 +419,7 @@
                     </div>
                     <div class="recordpart2">
                         <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
-                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p class="recordpart2text">״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
                         <p>
                             <img src="images/location.png">פתח תקווה
                             <span>
@@ -371,7 +443,7 @@
                     </div>
                     <div class="recordpart2">
                         <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
-                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p class="recordpart2text">״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
                         <p>
                             <img src="images/location.png">פתח תקווה
                             <span>
@@ -395,7 +467,7 @@
                     </div>
                     <div class="recordpart2">
                         <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
-                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p class="recordpart2text">״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
                         <p>
                             <img src="images/location.png">פתח תקווה
                             <span>
@@ -419,7 +491,7 @@
                     </div>
                     <div class="recordpart2">
                         <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
-                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p class="recordpart2text">״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
                         <p>
                             <img src="images/location.png">פתח תקווה
                             <span>
@@ -443,7 +515,7 @@
                     </div>
                     <div class="recordpart2">
                         <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
-                        <p>״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <p class="recordpart2text">״ריף אלמוגים״ הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
                         <p>
                             <img src="images/location.png">פתח תקווה
                             <span>
@@ -483,26 +555,45 @@
                 </div>
                 <div class="footer2">
                     <h5>סוכנים</h5><br>
-                    <p>הרשמת למערכת</p>
-                    <p>צור קשר</p>
+                    <p>
+                        <a>הרשמת למערכת</a>
+                    </p>
+                    <p>
+                        <a>צור קשר</a>
+                    </p>
                     <button>כניסת סוכנים</button>
                 </div>
                 <div class="footer3">
                     <h5>פרטים חשובים</h5><br>
-                    <p>תנאי שימוש</p>
-                    <p>מדיניות פרטיות</p>
-                    <p>צור קשר</p>
+                    <p>
+                        <a>תנאי שימוש</a>
+                    </p>
+                    <p>
+                        <a>מדיניות פרטיות</a>
+                    </p>
+                    <p>
+                        <a>צור קשר</a>
+                    </p>
                 </div>
                 <div class="footer4">
                     <h5>עקבו אחרינו</h5><br>
-                    <p>פייסבוק</p>
-                    <p>טוויטר</p>
-                    <p>גוגל פלוס</p>
+                    <p id="facebook">
+                        <a>פייסבוק</a>
+                    </p>
+                    <p id="twiter">
+                        <a>טוויטר</a>
+                    </p>
+                    <p id="google">
+                        <a>גוגל פלוס</a>
+                    </p>
                 </div>
                 <div class="footer5">
                     <h5>השאר מעודכן</h5><br>
                     <p>הירשם לרשימה התפוצה שלנו ואנו נדאג לעדכן אותך בכל המידע החשוב.</p>
-                    <button>כתובת הדוא״ל שלך</button>
+                    <label class="emailButton">
+                        <button></button>
+                        <input type="email" placeholder="כתובת הדוא״ל שלך">
+                    </label>
                 </div>
             </div>
         </div>

@@ -34,7 +34,7 @@
 
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1120px) {
 
   #wrapper{
     main {
@@ -44,10 +44,6 @@
 
   header{
     height:220px;
-
-    #topbar{
-      width:80%;
-    }
 
     #topbar{
       background-color: white;
@@ -118,22 +114,25 @@
             }
           }
 
-        .formfilter{
-          width:45%;
-          border:1px solid lightgray;
-          padding:5px;
-          position: relative;
-          bottom:5px;
+          #resultsFilter{
+            #leftFilter:before{
+              z-index: -100;
+            }
+          }
 
-          form{
-            padding: 15px;
-            label{
-              border-right:0 !important;
+          .formfilter{
+            width:45%;
+            border:1px solid lightgray;
+            padding:5px;
+            position: relative;
+            bottom:5px;
+
+            form{
+              padding: 15px;
             }
           }
         }
 
-        }
         .record{
           .recordpart1{
             img{
@@ -189,8 +188,7 @@
       div:last-child{
         display: block;
         text-align: center;
-        margin:0 auto;
-        margin-top:50px;
+        margin: 50px auto 0;
         border-right: 0 !important;
         width:100%;
         button{
@@ -200,6 +198,9 @@
 
       .footer5{
         width:100% !important;
+        label{
+          margin: auto;
+        }
       }
     }
   }
@@ -211,4 +212,63 @@
       font-size: 10px;
     }
   }
+  #wrapper{
+    main{
+      #leftSide{
+        #searchResults{
+          #resultsFilter{
+            .formfilter{
+              padding: 0;
+              margin: 0;
+              padding-bottom: 5px;
+              padding-left:5px;
+              margin-top:4px;
+              form{
+                label{
+                  font-size: 70%;
+                }
+                select{
+                  font-size: 100%;
+                }
+              }
+            }
+          }
+        }
+        .record{
+          .recordpart1{
+            flex: 50%;
+            img{
+              width:80%;
+            }
+          }
+          .recordpart2{
+            flex: 30%;
+            h2{
+              font-size: 90%;
+            }
+            .recordpart2text{
+              display:none;
+            }
+            p{
+              span{
+                float:right;
+              }
+            }
+          }
+          .recordpart3{
+            flex: 20%;
+            h3{
+              margin: 0;
+              padding: 0;
+            }
+          }
+          .recordpart3:before{
+            position:absolute;
+            right:-5px;
+          }
+        }
+      }
+    }
+  }
+
 }
