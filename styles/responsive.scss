@@ -44,7 +44,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1020px) {
 
   #wrapper{
     main {
@@ -53,13 +53,14 @@
   }
 
   header{
-    height:220px;
+    height:284px;
 
     #topbar{
       background-color: white;
       width:100%;
       position: relative;
       border-radius: 0;
+      padding-bottom: 16px;
 
       #leftTopBar{
         display: none;
@@ -82,7 +83,8 @@
 
       h1{
         margin:0;
-        font-size: 40px;
+        margin-top: 30px;
+        font-size: 45px;
       }
       p{
         display: none;
@@ -119,6 +121,14 @@
 
         #searchResults{
           text-align: center;
+          height:132px;
+          h3{
+            font-size: 18px;
+            position: relative;
+            letter-spacing: 0.5px;
+            right: -8px;
+            font-weight: bolder;
+          }
           div{
             span{
               display: none;
@@ -126,17 +136,18 @@
           }
 
           #resultsFilter{
+            padding: 19px 0 15px 15px;
             #leftFilter:before{
               z-index: -100;
             }
           }
 
           .formfilter{
-            width:45%;
-            border:1px solid lightgray;
-            padding:5px;
+            width: 40%;
+            border: 1px solid lightgray;
+            padding: 14px;
             position: relative;
-            bottom:5px;
+            bottom: 7px;
 
             form{
               padding: 15px;
@@ -200,15 +211,18 @@
         display: block;
         text-align: center;
         margin: 50px auto 0;
-        border-right: 0 !important;
         width:100%;
         button{
           width:100%;
         }
       }
+      .footer5:before{
+        display: none !important;
+      }
 
       .footer5{
         width:100% !important;
+        margin-top: 0 !important;
         label{
           margin: auto;
         }
@@ -223,25 +237,23 @@
       font-size: 10px;
     }
   }
+
+  header{
+    #introduction {
+      h1 {
+        margin: 20px 0 0;
+        font-size: 40px;
+      }
+    }
+  }
   #wrapper{
     main{
       #leftSide{
         #searchResults{
           #resultsFilter{
             .formfilter{
-              padding: 0;
-              margin: 0;
-              padding-bottom: 5px;
-              padding-left:5px;
-              margin-top:4px;
-              form{
-                label{
-                  font-size: 70%;
-                }
-                select{
-                  font-size: 100%;
-                }
-              }
+              padding: 0 0 5px 5px;
+              margin: 4px 0 0;
             }
           }
         }

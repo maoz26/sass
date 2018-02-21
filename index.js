@@ -1,1 +1,1 @@
-const css = require("./scss/style.scss");
+var css = require("./styles/style.scss");

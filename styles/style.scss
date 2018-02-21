@@ -1,13 +1,29 @@
 // import reset css
 @import "reset.css";
 
-//fonts
+///////////////////////////
+// fonts
+///////////////////////////
+
 @font-face {
   font-family: 'slick';
   src: url('../fonts/slick/slick.woff');
 }
 
-//custom class and vars
+@font-face {
+  font-family: 'SpoilerEN';
+  src: url('../fonts/SpoilerEN/enspoilerwebfont.woff');
+}
+
+@font-face {
+  font-family: 'SpoilerHE';
+  src: url('../fonts/SpoilerHE/FbSpoiler-Lightwebfont.woff');
+}
+
+///////////////////////////
+// custom class and vars
+///////////////////////////
+
 $font-stack: slick, Helvetica, sans-serif;
 $myBorder: 1px solid #d9e4ea;
 $myTextColor: #9cb3bd;
@@ -48,13 +64,13 @@ body{
 // header css
 header{
   width: 100%;
-  height: 363px;
+  height: 359px;
   background-image: url("../images/headerBG.png");
 
   #topbar{
     width: 60%;
     height:35px;
-    padding-top:18px;
+    padding-top:12px;
     margin: auto;
     border-radius: 4px;
 
@@ -154,13 +170,14 @@ header{
     }
     #priceAshaf{
       display:none;
-      width:50%;
-      padding:5px;
-      border-radius: 50px;
-      color:white;
+      width: 36%;
+      padding: 5px;
+      border-radius: 151px;
+      color: white;
       background-color: red;
-      margin: 30px auto auto;
-      font-size: 14px;
+      margin: 32px auto auto;
+      font-size: 16px;
+      height: 30px;
     }
   }
 
@@ -218,11 +235,11 @@ header{
       }
 
       div{
-        margin-right: 8px;
 
         img{
           position: relative;
           right:4px;
+          margin-right: 8px;
         }
       }
 
@@ -236,7 +253,7 @@ header{
       .ptext{
         display: inline-block;
         font-size: 15px;
-        width:100px;
+        max-width:150px;
         position:relative;
         bottom:10px;
       }
@@ -270,7 +287,7 @@ header{
       #selectArea{
         margin:auto;
         width:86%;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
         border-bottom: $myBorder;
 
         select{
@@ -292,14 +309,13 @@ header{
       #questionsArea{
         margin:auto;
         width:86%;
-
         .question{
           display: flex;
           flex-direction: row;
 
           p{
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 23px;
+            padding-bottom: 14px;
             border-bottom: $myBorder;
             height: 40px;
             display:flex;
@@ -308,7 +324,7 @@ header{
           }
 
           .container{
-            width: 40%;
+            width: 30%;
             border-bottom: $myBorder;
           }
         }
@@ -320,9 +336,9 @@ header{
         height:44px;
         display: block;
         color:white;
-        margin: 15px auto;
+        margin: 22px auto;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 15px;
         border:0;
       }
 
@@ -350,7 +366,7 @@ header{
 
       #searchResults{
         height:100px;
-        margin-bottom: 14px;
+        margin-bottom: 12px;
         background-color: #ffffff;
         border: $myBorder;
         color: #4f788a;
@@ -367,6 +383,10 @@ header{
           #leftFilter{
             position:relative;
             float:left;
+            letter-spacing: -1px;
+            select{
+              letter-spacing: -0.5px;
+            }
           }
 
           #leftFilter:before{
@@ -397,12 +417,11 @@ header{
                   padding-right:5px;
                 }
               }
-
             }
 
             span{
-              padding-right:12px;
-              margin-right: 12px;
+              padding-right:6px;
+              margin-right: 6px;
               font-size: 13px;
               position: relative;
             }
@@ -426,8 +445,8 @@ header{
       .record {
         display: flex;
         flex-direction: row;
-        height: 143px;
-        margin-bottom: 14px;
+        height: 142px;
+        margin-bottom: 12px;
         border: $myBorder;
         background-color: white;
         border-radius: 4px;
@@ -447,17 +466,23 @@ header{
         }
         .recordpart2 {
           flex: 50%;
-          margin: 15px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          margin-right: 15px;
+          margin-left: 15px;
 
           h2{
+            margin-top: 4px;
+            margin-right: 5px;
             font-size: 20px;
-            letter-spacing: -1px;
+            letter-spacing: -0.6px;
+            color: #36445d;
           }
 
           p{
-            font-size: 12px;
+            font-size: 13px;
             line-height: 1.5;
-            padding-top:12px;
+            padding-top:8px;
 
             span{
               float:left;
@@ -465,6 +490,9 @@ header{
               img{
                 width:100%;
                 height:auto;
+                position: relative;
+                top: 5px;
+                left: -10px;
               }
             }
           }
@@ -474,8 +502,10 @@ header{
           margin: 15px;
           padding-right: 20px;
           position: relative;
+          padding-top: 3px;
 
           h3{
+            color: #36445d;
             padding-top: 10px;
             font-size: 26px;
             span{
@@ -493,8 +523,8 @@ header{
           button{
             @extend .buyMe;
             position:absolute;
-            bottom: 16px;
-            left:3px;
+            bottom: 12px;
+            left:2px;
             width:90%;
             height:36px;
             font-size: 16px;
@@ -516,11 +546,12 @@ header{
         .recordpart3:before{
           content: '';
           width: 1px;
-          height: 100px;
+          height: 90px;
           display: block;
           background-color: lightgray;
           position:absolute;
-          right:1px;
+          right:-4px;
+          top:11px;
         }
       }
 
@@ -528,7 +559,7 @@ header{
 
     #searchPages{
       margin-top: 6px;
-      margin-bottom: 321px;
+      margin-bottom: 355px;
       height:34px;
       grid-column-start: 3;
       grid-column-end: 4;
@@ -541,7 +572,7 @@ header{
         width:34px;
         height:34px;
         background-color:#fcfcfc;
-        margin-right: 5px;
+        margin-right: 6px;
         font-size: 15px;
       }
     }
@@ -565,7 +596,7 @@ footer{
       display: flex;
       flex-direction: row;
       width:60%;
-      margin:auto;
+      margin: 66px auto 50px;
 
       button{
         border-radius: 15px;
@@ -593,6 +624,10 @@ footer{
           width: 15%;
           height: 34px;
         }
+        .emailButton2{
+          background-size: auto;
+          background: transparent url("../images/icon-checked.png") no-repeat center;
+        }
 
         input{
           background-color: transparent;
@@ -605,25 +640,31 @@ footer{
       }
 
       div{
-        height:115px;
         width:120px;
-        margin-bottom:50px;
-        margin-top: 50px;
-        padding-left:15px;
-        padding-right:15px;
         color:white;
+        padding-left: 20px;
+        padding-right: 20px;
         img{
           margin-bottom: 10px;
         }
       }
 
       .footer1{
-        width:22%;
+        width:27%;
         padding-right:0;
       }
       .footer2{
         width:15%;
-        border-right:1px solid aliceblue;
+        position:relative;
+      }
+      .footer2:before{
+        content: '';
+        width: 1px;
+        height: 100px;
+        display: block;
+        background-color: #445566;
+        position:absolute;
+        right:1px;
       }
       .footer3{
         width:15%;
@@ -659,10 +700,19 @@ footer{
       .footer5{
         width:33%;
         padding-left: 0;
-        border-right:1px solid aliceblue;
+        position:relative;
         p{
           margin-bottom: 15px;
         }
+      }
+      .footer5:before{
+        content: '';
+        width: 1px;
+        height: 100px;
+        display: block;
+        background-color: #445566;
+        position:absolute;
+        right:1px;
       }
 
       h5{
@@ -695,14 +745,18 @@ footer{
 // end page css
 ///////////////////////////
 
-// external css, arrow button css
+
+///////////////////////////
+// external css
+///////////////////////////
+
+// arrow button css
 .arrow {
   text-align: center;
   display: inline-block;
   vertical-align: middle;
-  position:relative;
-  bottom:14px;
-  right:27px;
+  float:left;
+
 }
 
 .arrow a {
@@ -742,16 +796,15 @@ footer{
   transform: rotate(-135deg);
 }
 
+// radio button css
 $primary-color: #00c7d9;
-
 .container {
   float: left;
 }
 
 .radio-tile-group {
-  margin-top: 10px;
+  margin-top: 18px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 
   //set dimensions for invisible container
@@ -759,7 +812,8 @@ $primary-color: #00c7d9;
     position: relative;
     height:  34px;
     width:  34px;
-    margin: 5px;
+    margin: 3px;
+    border-radius: 4px;
 
     //make actual radio input invisible
     // + stretch to fill container
@@ -807,5 +861,9 @@ $primary-color: #00c7d9;
   }
 }
 
-//load responsive scss
+///////////////////////////
+// end external css
+///////////////////////////
+
+//load responsive styles
 @import "responsive.scss";

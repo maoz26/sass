@@ -1,17 +1,4 @@
-/* === dont forget to import scss to main.js file === */
-/* ===> import './main.scss'; <=== */
-
-// ExtractTextPlugin moves all the required *.css modules in entry chunks into a separate CSS file.
-// So your styles are no longer inlined into the JS bundle.
-// But we have to import css in js file.  Just css in bundled.
-// We can use without sass, with just css-loader.
-
-// to autoprefix in webpack use postcss-loader and
-// just add 'postcss-loader' in extratplugin use and
-// create postcss.config.js, check below!
-// https://github.com/postcss/autoprefixer#webpack
-
-var path = require('path');
+const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -31,7 +18,7 @@ module.exports = {
             }, {
                 loader: "sass-loader", // compiles Sass to CSS
                 options: {
-                    includePaths: ["./style.scss"]
+                    name: "styles/[name].[ext]"
                 }
             }]
         },
@@ -56,10 +43,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('style.css')
-        //if you want to pass in options, you can do so:
-        //new ExtractTextPlugin({
-        //  filename: 'style.css'
-        //})
+        new ExtractTextPlugin({ // define where to save the file
+            filename: 'styles/[name].css',
+            allChunks: true
+        })
     ]
 };

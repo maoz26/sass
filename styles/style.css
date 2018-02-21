@@ -2,6 +2,12 @@
 @font-face {
   font-family: 'slick';
   src: url("../fonts/slick/slick.woff"); }
+@font-face {
+  font-family: 'SpoilerEN';
+  src: url("../fonts/SpoilerEN/enspoilerwebfont.woff"); }
+@font-face {
+  font-family: 'SpoilerHE';
+  src: url("../fonts/SpoilerHE/FbSpoiler-Lightwebfont.woff"); }
 .centerImg, #wrapper main #rightSide .advertise img, #wrapper main #leftSide .record .recordpart1 img {
   display: block;
   width: 92%;
@@ -28,12 +34,12 @@ body {
 
 header {
   width: 100%;
-  height: 363px;
+  height: 359px;
   background-image: url("../images/headerBG.png"); }
   header #topbar {
     width: 60%;
     height: 35px;
-    padding-top: 18px;
+    padding-top: 12px;
     margin: auto;
     border-radius: 4px; }
     header #topbar #rightTopBar {
@@ -105,13 +111,14 @@ header {
       margin-right: 15px; }
     header #introduction #priceAshaf {
       display: none;
-      width: 50%;
+      width: 36%;
       padding: 5px;
-      border-radius: 50px;
+      border-radius: 151px;
       color: white;
       background-color: red;
-      margin: 30px auto auto;
-      font-size: 14px; }
+      margin: 32px auto auto;
+      font-size: 16px;
+      height: 30px; }
 
 #wrapper {
   width: 100%;
@@ -154,11 +161,10 @@ header {
       #wrapper main #breadcrumbs #lastBread {
         position: relative;
         right: 30px; }
-      #wrapper main #breadcrumbs div {
+      #wrapper main #breadcrumbs div img {
+        position: relative;
+        right: 4px;
         margin-right: 8px; }
-        #wrapper main #breadcrumbs div img {
-          position: relative;
-          right: 4px; }
       #wrapper main #breadcrumbs p {
         display: inline-block;
         font-size: 40px;
@@ -167,7 +173,7 @@ header {
       #wrapper main #breadcrumbs .ptext {
         display: inline-block;
         font-size: 15px;
-        width: 100px;
+        max-width: 150px;
         position: relative;
         bottom: 10px; }
     #wrapper main #rightSide {
@@ -187,7 +193,7 @@ header {
       #wrapper main #rightSide #selectArea {
         margin: auto;
         width: 86%;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
         border-bottom: 1px solid #d9e4ea; }
         #wrapper main #rightSide #selectArea select {
           border: 1px solid lightgray;
@@ -209,24 +215,24 @@ header {
           display: flex;
           flex-direction: row; }
           #wrapper main #rightSide #questionsArea .question p {
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 23px;
+            padding-bottom: 14px;
             border-bottom: 1px solid #d9e4ea;
             height: 40px;
             display: flex;
             font-size: 14px;
             width: 70%; }
           #wrapper main #rightSide #questionsArea .question .container {
-            width: 40%;
+            width: 30%;
             border-bottom: 1px solid #d9e4ea; }
       #wrapper main #rightSide #getOffers {
         width: 100%;
         height: 44px;
         display: block;
         color: white;
-        margin: 15px auto;
+        margin: 22px auto;
         font-weight: bold;
-        font-size: 16px;
+        font-size: 15px;
         border: 0; }
       #wrapper main #rightSide #filterbar {
         background-color: #ffffff;
@@ -241,7 +247,7 @@ header {
       grid-column-end: 4; }
       #wrapper main #leftSide #searchResults {
         height: 100px;
-        margin-bottom: 14px;
+        margin-bottom: 12px;
         background-color: #ffffff;
         border: 1px solid #d9e4ea;
         color: #4f788a;
@@ -251,7 +257,10 @@ header {
           border-top: 1px solid #d9e4ea; }
           #wrapper main #leftSide #searchResults #resultsFilter #leftFilter {
             position: relative;
-            float: left; }
+            float: left;
+            letter-spacing: -1px; }
+            #wrapper main #leftSide #searchResults #resultsFilter #leftFilter select {
+              letter-spacing: -0.5px; }
           #wrapper main #leftSide #searchResults #resultsFilter #leftFilter:before {
             content: '';
             width: 1px;
@@ -275,8 +284,8 @@ header {
                 padding-left: 15px;
                 padding-right: 5px; }
             #wrapper main #leftSide #searchResults #resultsFilter div span {
-              padding-right: 12px;
-              margin-right: 12px;
+              padding-right: 6px;
+              margin-right: 6px;
               font-size: 13px;
               position: relative; }
             #wrapper main #leftSide #searchResults #resultsFilter div span:before {
@@ -291,8 +300,8 @@ header {
       #wrapper main #leftSide .record {
         display: flex;
         flex-direction: row;
-        height: 143px;
-        margin-bottom: 14px;
+        height: 142px;
+        margin-bottom: 12px;
         border: 1px solid #d9e4ea;
         background-color: white;
         border-radius: 4px; }
@@ -307,25 +316,36 @@ header {
             border-radius: 4px; }
         #wrapper main #leftSide .record .recordpart2 {
           flex: 50%;
-          margin: 15px; }
+          margin-top: 15px;
+          margin-bottom: 15px;
+          margin-right: 15px;
+          margin-left: 15px; }
           #wrapper main #leftSide .record .recordpart2 h2 {
+            margin-top: 4px;
+            margin-right: 5px;
             font-size: 20px;
-            letter-spacing: -1px; }
+            letter-spacing: -0.6px;
+            color: #36445d; }
           #wrapper main #leftSide .record .recordpart2 p {
-            font-size: 12px;
+            font-size: 13px;
             line-height: 1.5;
-            padding-top: 12px; }
+            padding-top: 8px; }
             #wrapper main #leftSide .record .recordpart2 p span {
               float: left; }
               #wrapper main #leftSide .record .recordpart2 p span img {
                 width: 100%;
-                height: auto; }
+                height: auto;
+                position: relative;
+                top: 5px;
+                left: -10px; }
         #wrapper main #leftSide .record .recordpart3 {
           flex: 15%;
           margin: 15px;
           padding-right: 20px;
-          position: relative; }
+          position: relative;
+          padding-top: 3px; }
           #wrapper main #leftSide .record .recordpart3 h3 {
+            color: #36445d;
             padding-top: 10px;
             font-size: 26px; }
             #wrapper main #leftSide .record .recordpart3 h3 span {
@@ -338,8 +358,8 @@ header {
             padding-bottom: 15px; }
           #wrapper main #leftSide .record .recordpart3 button {
             position: absolute;
-            bottom: 16px;
-            left: 3px;
+            bottom: 12px;
+            left: 2px;
             width: 90%;
             height: 36px;
             font-size: 16px;
@@ -356,14 +376,15 @@ header {
         #wrapper main #leftSide .record .recordpart3:before {
           content: '';
           width: 1px;
-          height: 100px;
+          height: 90px;
           display: block;
           background-color: lightgray;
           position: absolute;
-          right: 1px; }
+          right: -4px;
+          top: 11px; }
     #wrapper main #searchPages {
       margin-top: 6px;
-      margin-bottom: 321px;
+      margin-bottom: 355px;
       height: 34px;
       grid-column-start: 3;
       grid-column-end: 4;
@@ -375,7 +396,7 @@ header {
         width: 34px;
         height: 34px;
         background-color: #fcfcfc;
-        margin-right: 5px;
+        margin-right: 6px;
         font-size: 15px; }
 
 footer {
@@ -392,7 +413,7 @@ footer {
       display: flex;
       flex-direction: row;
       width: 60%;
-      margin: auto; }
+      margin: 66px auto 50px; }
       footer #pageTree #treeContainer button {
         border-radius: 15px;
         width: 80%;
@@ -415,6 +436,9 @@ footer {
           border: 0;
           width: 15%;
           height: 34px; }
+        footer #pageTree #treeContainer .emailButton .emailButton2 {
+          background-size: auto;
+          background: transparent url("../images/icon-checked.png") no-repeat center; }
         footer #pageTree #treeContainer .emailButton input {
           background-color: transparent;
           border: 0;
@@ -422,21 +446,26 @@ footer {
           line-height: 34px;
           width: 70%; }
       footer #pageTree #treeContainer div {
-        height: 115px;
         width: 120px;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        padding-left: 15px;
-        padding-right: 15px;
-        color: white; }
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px; }
         footer #pageTree #treeContainer div img {
           margin-bottom: 10px; }
       footer #pageTree #treeContainer .footer1 {
-        width: 22%;
+        width: 27%;
         padding-right: 0; }
       footer #pageTree #treeContainer .footer2 {
         width: 15%;
-        border-right: 1px solid aliceblue; }
+        position: relative; }
+      footer #pageTree #treeContainer .footer2:before {
+        content: '';
+        width: 1px;
+        height: 100px;
+        display: block;
+        background-color: #445566;
+        position: absolute;
+        right: 1px; }
       footer #pageTree #treeContainer .footer3 {
         width: 15%; }
       footer #pageTree #treeContainer .footer4 {
@@ -463,9 +492,17 @@ footer {
       footer #pageTree #treeContainer .footer5 {
         width: 33%;
         padding-left: 0;
-        border-right: 1px solid aliceblue; }
+        position: relative; }
         footer #pageTree #treeContainer .footer5 p {
           margin-bottom: 15px; }
+      footer #pageTree #treeContainer .footer5:before {
+        content: '';
+        width: 1px;
+        height: 100px;
+        display: block;
+        background-color: #445566;
+        position: absolute;
+        right: 1px; }
       footer #pageTree #treeContainer h5 {
         font-weight: bold;
         padding-right: 0; }
@@ -485,9 +522,7 @@ footer {
   text-align: center;
   display: inline-block;
   vertical-align: middle;
-  position: relative;
-  bottom: 14px;
-  right: 27px; }
+  float: left; }
 
 .arrow a {
   display: inline-block;
@@ -525,15 +560,15 @@ footer {
   float: left; }
 
 .radio-tile-group {
-  margin-top: 10px;
+  margin-top: 18px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center; }
   .radio-tile-group .input-container {
     position: relative;
     height: 34px;
     width: 34px;
-    margin: 5px; }
+    margin: 3px;
+    border-radius: 4px; }
     .radio-tile-group .input-container .radio-button {
       opacity: 0;
       position: absolute;
@@ -583,17 +618,18 @@ footer {
     right: 0; }
   #wrapper main #leftSide #searchResults #resultsFilter div span {
     display: none; } }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1020px) {
   #wrapper main {
     width: 80%; }
 
   header {
-    height: 220px; }
+    height: 284px; }
     header #topbar {
       background-color: white;
       width: 100%;
       position: relative;
-      border-radius: 0; }
+      border-radius: 0;
+      padding-bottom: 16px; }
       header #topbar #leftTopBar {
         display: none; }
       header #topbar form {
@@ -608,7 +644,8 @@ footer {
       width: 80%; }
       header #introduction h1 {
         margin: 0;
-        font-size: 40px; }
+        margin-top: 30px;
+        font-size: 45px; }
       header #introduction p {
         display: none; }
       header #introduction #priceAshaf {
@@ -630,17 +667,26 @@ footer {
       grid-column-end: 4;
       min-width: 0; }
       #wrapper main #leftSide #searchResults {
-        text-align: center; }
+        text-align: center;
+        height: 132px; }
+        #wrapper main #leftSide #searchResults h3 {
+          font-size: 18px;
+          position: relative;
+          letter-spacing: 0.5px;
+          right: -8px;
+          font-weight: bolder; }
         #wrapper main #leftSide #searchResults div span {
           display: none; }
-        #wrapper main #leftSide #searchResults #resultsFilter #leftFilter:before {
-          z-index: -100; }
+        #wrapper main #leftSide #searchResults #resultsFilter {
+          padding: 19px 0 15px 15px; }
+          #wrapper main #leftSide #searchResults #resultsFilter #leftFilter:before {
+            z-index: -100; }
         #wrapper main #leftSide #searchResults .formfilter {
-          width: 45%;
+          width: 40%;
           border: 1px solid lightgray;
-          padding: 5px;
+          padding: 14px;
           position: relative;
-          bottom: 5px; }
+          bottom: 7px; }
           #wrapper main #leftSide #searchResults .formfilter form {
             padding: 15px; }
       #wrapper main #leftSide .record .recordpart1 img {
@@ -671,28 +717,27 @@ footer {
     display: block;
     text-align: center;
     margin: 50px auto 0;
-    border-right: 0 !important;
     width: 100%; }
     footer #pageTree div:last-child button {
       width: 100%; }
+  footer #pageTree .footer5:before {
+    display: none !important; }
   footer #pageTree .footer5 {
-    width: 100% !important; }
+    width: 100% !important;
+    margin-top: 0 !important; }
     footer #pageTree .footer5 label {
       margin: auto; } }
 @media only screen and (max-width: 550px) {
   #designedBy p {
     font-size: 10px; }
 
+  header #introduction h1 {
+    margin: 20px 0 0;
+    font-size: 40px; }
+
   #wrapper main #leftSide #searchResults #resultsFilter .formfilter {
-    padding: 0;
-    margin: 0;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    margin-top: 4px; }
-    #wrapper main #leftSide #searchResults #resultsFilter .formfilter form label {
-      font-size: 70%; }
-    #wrapper main #leftSide #searchResults #resultsFilter .formfilter form select {
-      font-size: 100%; }
+    padding: 0 0 5px 5px;
+    margin: 4px 0 0; }
   #wrapper main #leftSide .record .recordpart1 {
     flex: 50%; }
     #wrapper main #leftSide .record .recordpart1 img {
