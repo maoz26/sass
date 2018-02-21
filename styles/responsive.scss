@@ -124,9 +124,9 @@
           height:132px;
           h3{
             font-size: 18px;
-            position: relative;
+
             letter-spacing: 0.5px;
-            right: -8px;
+            padding-right: 8px;
             font-weight: bolder;
           }
           div{
@@ -167,10 +167,11 @@
             p{
               span{
                 width:55px;
-
                 img{
                   height: auto;
                   float:left;
+                  margin-right: 10px;
+                  margin-left: 10px;
                 }
               }
             }
@@ -251,15 +252,19 @@
       #leftSide{
         #searchResults{
           #resultsFilter{
+            #rightFilter{
+              width: 45%;
+            }
             .formfilter{
-              padding: 0 0 5px 5px;
-              margin: 4px 0 0;
+              padding-right: 0;
             }
           }
         }
         .record{
+          height:110px;
+
           .recordpart1{
-            flex: 50%;
+            flex: 30%;
             img{
               width:80%;
             }
@@ -284,10 +289,20 @@
               margin: 0;
               padding: 0;
             }
+            button{
+              position: relative;
+              bottom: 5px;
+              width: 50%;
+              img{
+                left: 2px;
+              }
+            }
           }
           .recordpart3:before{
             position:absolute;
             right:-5px;
+            top:5px;
+            height:80px;
           }
         }
       }

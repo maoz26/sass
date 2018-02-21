@@ -173,7 +173,7 @@ header {
       #wrapper main #breadcrumbs .ptext {
         display: inline-block;
         font-size: 15px;
-        max-width: 150px;
+        max-width: 165px;
         position: relative;
         bottom: 10px; }
     #wrapper main #rightSide {
@@ -671,9 +671,8 @@ footer {
         height: 132px; }
         #wrapper main #leftSide #searchResults h3 {
           font-size: 18px;
-          position: relative;
           letter-spacing: 0.5px;
-          right: -8px;
+          padding-right: 8px;
           font-weight: bolder; }
         #wrapper main #leftSide #searchResults div span {
           display: none; }
@@ -698,7 +697,9 @@ footer {
           width: 55px; }
           #wrapper main #leftSide .record .recordpart2 p span img {
             height: auto;
-            float: left; }
+            float: left;
+            margin-right: 10px;
+            margin-left: 10px; }
       #wrapper main #leftSide .record .recordpart3 h3 {
         font-size: 18px; }
       #wrapper main #leftSide .record .recordpart3 button span {
@@ -735,28 +736,39 @@ footer {
     margin: 20px 0 0;
     font-size: 40px; }
 
+  #wrapper main #leftSide #searchResults #resultsFilter #rightFilter {
+    width: 45%; }
   #wrapper main #leftSide #searchResults #resultsFilter .formfilter {
-    padding: 0 0 5px 5px;
-    margin: 4px 0 0; }
-  #wrapper main #leftSide .record .recordpart1 {
-    flex: 50%; }
-    #wrapper main #leftSide .record .recordpart1 img {
-      width: 80%; }
-  #wrapper main #leftSide .record .recordpart2 {
-    flex: 30%; }
-    #wrapper main #leftSide .record .recordpart2 h2 {
-      font-size: 90%; }
-    #wrapper main #leftSide .record .recordpart2 .recordpart2text {
-      display: none; }
-    #wrapper main #leftSide .record .recordpart2 p span {
-      float: right; }
-  #wrapper main #leftSide .record .recordpart3 {
-    flex: 20%; }
-    #wrapper main #leftSide .record .recordpart3 h3 {
-      margin: 0;
-      padding: 0; }
-  #wrapper main #leftSide .record .recordpart3:before {
-    position: absolute;
-    right: -5px; } }
+    padding-right: 0; }
+  #wrapper main #leftSide .record {
+    height: 110px; }
+    #wrapper main #leftSide .record .recordpart1 {
+      flex: 30%; }
+      #wrapper main #leftSide .record .recordpart1 img {
+        width: 80%; }
+    #wrapper main #leftSide .record .recordpart2 {
+      flex: 30%; }
+      #wrapper main #leftSide .record .recordpart2 h2 {
+        font-size: 90%; }
+      #wrapper main #leftSide .record .recordpart2 .recordpart2text {
+        display: none; }
+      #wrapper main #leftSide .record .recordpart2 p span {
+        float: right; }
+    #wrapper main #leftSide .record .recordpart3 {
+      flex: 20%; }
+      #wrapper main #leftSide .record .recordpart3 h3 {
+        margin: 0;
+        padding: 0; }
+      #wrapper main #leftSide .record .recordpart3 button {
+        position: relative;
+        bottom: 5px;
+        width: 50%; }
+        #wrapper main #leftSide .record .recordpart3 button img {
+          left: 2px; }
+    #wrapper main #leftSide .record .recordpart3:before {
+      position: absolute;
+      right: -5px;
+      top: 5px;
+      height: 80px; } }
 
 /*# sourceMappingURL=style.css.map */
