@@ -24,8 +24,14 @@
 
 .buyMe, #wrapper main #rightSide #getOffers, #wrapper main #leftSide .record .recordpart3 button {
   background-color: #00c7d9;
+  transition: background-color 0.3s linear;
   border-radius: 50px;
   color: white; }
+
+.buyMe:hover, #wrapper main #rightSide #getOffers:hover, #wrapper main #leftSide .record .recordpart3 button:hover {
+  background-color: #f94e54;
+  transition: background-color 0.3s linear;
+  cursor: pointer; }
 
 body {
   direction: rtl;
@@ -115,7 +121,7 @@ header {
       padding: 5px;
       border-radius: 151px;
       color: white;
-      background-color: red;
+      background-color: #f94e54;
       margin: 32px auto auto;
       font-size: 16px;
       height: 30px; }
@@ -175,7 +181,12 @@ header {
         font-size: 15px;
         max-width: 165px;
         position: relative;
-        bottom: 10px; }
+        bottom: 10px;
+        transition: color 0.3s linear; }
+      #wrapper main #breadcrumbs .ptext:hover {
+        color: #00c7d9;
+        transition: color 0.3s linear;
+        cursor: pointer; }
     #wrapper main #rightSide {
       grid-column-start: 1;
       grid-column-end: 2;
@@ -241,7 +252,8 @@ header {
         margin-top: 15px;
         background-color: white;
         border: 1px solid #d9e4ea;
-        border-radius: 4px; }
+        border-radius: 4px;
+        cursor: pointer; }
     #wrapper main #leftSide {
       grid-column-start: 2;
       grid-column-end: 4; }
@@ -252,14 +264,21 @@ header {
         border: 1px solid #d9e4ea;
         color: #4f788a;
         border-radius: 4px; }
+        #wrapper main #leftSide #searchResults h3 span {
+          font-size: 86.5%; }
         #wrapper main #leftSide #searchResults #resultsFilter {
           padding: 13px 17px 15px 15px;
           border-top: 1px solid #d9e4ea; }
+          #wrapper main #leftSide #searchResults #resultsFilter #rightFilter form label {
+            font-weight: bold; }
+            #wrapper main #leftSide #searchResults #resultsFilter #rightFilter form label select {
+              color: #f94e54; }
           #wrapper main #leftSide #searchResults #resultsFilter #leftFilter {
             position: relative;
             float: left;
             letter-spacing: -1px; }
             #wrapper main #leftSide #searchResults #resultsFilter #leftFilter select {
+              color: #4f788a;
               letter-spacing: -0.5px; }
           #wrapper main #leftSide #searchResults #resultsFilter #leftFilter:before {
             content: '';
@@ -287,7 +306,12 @@ header {
               padding-right: 6px;
               margin-right: 6px;
               font-size: 13px;
-              position: relative; }
+              position: relative;
+              transition: color 0.3s linear; }
+            #wrapper main #leftSide #searchResults #resultsFilter div span:hover {
+              color: #f94e54;
+              transition: color 0.3s linear;
+              cursor: pointer; }
             #wrapper main #leftSide #searchResults #resultsFilter div span:before {
               content: '';
               width: 1px;
@@ -304,7 +328,8 @@ header {
         margin-bottom: 12px;
         border: 1px solid #d9e4ea;
         background-color: white;
-        border-radius: 4px; }
+        border-radius: 4px;
+        transition: background-color 0.2s linear; }
         #wrapper main #leftSide .record .recordpart1 {
           flex: 25%; }
           #wrapper main #leftSide .record .recordpart1 img {
@@ -316,16 +341,18 @@ header {
             border-radius: 4px; }
         #wrapper main #leftSide .record .recordpart2 {
           flex: 50%;
-          margin-top: 15px;
-          margin-bottom: 15px;
-          margin-right: 15px;
-          margin-left: 15px; }
+          margin: 15px; }
           #wrapper main #leftSide .record .recordpart2 h2 {
             margin-top: 4px;
             margin-right: 5px;
             font-size: 20px;
             letter-spacing: -0.6px;
-            color: #36445d; }
+            color: #36445d;
+            transition: color 0.3s linear; }
+          #wrapper main #leftSide .record .recordpart2 h2:hover {
+            color: #f94e54;
+            transition: color 0.3s linear;
+            cursor: pointer; }
           #wrapper main #leftSide .record .recordpart2 p {
             font-size: 13px;
             line-height: 1.5;
@@ -382,6 +409,9 @@ header {
           position: absolute;
           right: -4px;
           top: 11px; }
+      #wrapper main #leftSide .record:hover {
+        background-color: #f2fcfd;
+        transition: background-color 0.2s linear; }
     #wrapper main #searchPages {
       margin-top: 6px;
       margin-bottom: 355px;
@@ -398,6 +428,10 @@ header {
         background-color: #fcfcfc;
         margin-right: 6px;
         font-size: 15px; }
+      #wrapper main #searchPages button:hover {
+        background-color: #f94e54;
+        transition: background-color 0.3s linear;
+        cursor: pointer; }
 
 footer {
   display: grid;
@@ -414,13 +448,31 @@ footer {
       flex-direction: row;
       width: 60%;
       margin: 66px auto 50px; }
+      footer #pageTree #treeContainer div {
+        width: 120px;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px; }
+        footer #pageTree #treeContainer div p a:hover {
+          color: #f94e54;
+          transition: color 0.3s linear;
+          cursor: pointer; }
+        footer #pageTree #treeContainer div img {
+          margin-bottom: 10px; }
       footer #pageTree #treeContainer button {
         border-radius: 15px;
         width: 80%;
         height: 26px;
         border: 0;
         color: #313d42;
-        background-color: #eef4f7; }
+        background-color: #eef4f7;
+        transition: background-color 0.3s linear; }
+      footer #pageTree #treeContainer button:hover {
+        color: #eef4f7;
+        background-color: #33445c;
+        border: 1px solid #f6f7f9;
+        transition: background-color 0.3s linear;
+        cursor: pointer; }
       footer #pageTree #treeContainer .emailButton {
         border-radius: 15px;
         width: 80%;
@@ -445,13 +497,6 @@ footer {
           font-size: 14px;
           line-height: 34px;
           width: 70%; }
-      footer #pageTree #treeContainer div {
-        width: 120px;
-        color: white;
-        padding-left: 20px;
-        padding-right: 20px; }
-        footer #pageTree #treeContainer div img {
-          margin-bottom: 10px; }
       footer #pageTree #treeContainer .footer1 {
         width: 27%;
         padding-right: 0; }
@@ -575,7 +620,9 @@ footer {
       top: 0;
       left: 0;
       margin: 0;
-      cursor: pointer; }
+      cursor: pointer;
+      width: 100%;
+      height: 100%; }
     .radio-tile-group .input-container .radio-tile {
       display: flex;
       flex-direction: column;
@@ -584,7 +631,7 @@ footer {
       border: 1px solid #d9e4ea;
       border-radius: 5px;
       padding: 10px;
-      transition: transform 300ms ease; }
+      transition: transform 300ms linear; }
     .radio-tile-group .input-container .radio-tile-label {
       text-align: center;
       font-size: 0.75rem;
@@ -677,11 +724,13 @@ footer {
         #wrapper main #leftSide #searchResults div span {
           display: none; }
         #wrapper main #leftSide #searchResults #resultsFilter {
-          padding: 19px 0 15px 15px; }
+          padding: 19px 15px 15px 15px; }
           #wrapper main #leftSide #searchResults #resultsFilter #leftFilter:before {
             z-index: -100; }
+          #wrapper main #leftSide #searchResults #resultsFilter #rightFilter {
+            float: right; }
         #wrapper main #leftSide #searchResults .formfilter {
-          width: 40%;
+          width: 42%;
           border: 1px solid lightgray;
           padding: 14px;
           position: relative;
@@ -718,7 +767,8 @@ footer {
     display: block;
     text-align: center;
     margin: 50px auto 0;
-    width: 100%; }
+    width: 100%;
+    padding-right: 0 !important; }
     footer #pageTree div:last-child button {
       width: 100%; }
   footer #pageTree .footer5:before {
@@ -737,38 +787,49 @@ footer {
     font-size: 40px; }
 
   #wrapper main #leftSide #searchResults #resultsFilter #rightFilter {
-    width: 45%; }
+    width: 47%; }
   #wrapper main #leftSide #searchResults #resultsFilter .formfilter {
     padding-right: 0; }
   #wrapper main #leftSide .record {
-    height: 110px; }
+    height: 100px; }
     #wrapper main #leftSide .record .recordpart1 {
       flex: 30%; }
       #wrapper main #leftSide .record .recordpart1 img {
         width: 80%; }
     #wrapper main #leftSide .record .recordpart2 {
-      flex: 30%; }
+      flex: 30%;
+      position: relative;
+      top: 12px; }
       #wrapper main #leftSide .record .recordpart2 h2 {
-        font-size: 90%; }
+        font-size: 90%;
+        position: absolute;
+        top: -17px;
+        width: 240px; }
       #wrapper main #leftSide .record .recordpart2 .recordpart2text {
         display: none; }
       #wrapper main #leftSide .record .recordpart2 p span {
         float: right; }
     #wrapper main #leftSide .record .recordpart3 {
-      flex: 20%; }
+      flex: 30%;
+      height: 90%;
+      position: relative;
+      top: 20px;
+      padding-right: 0;
+      margin-left: 50px; }
       #wrapper main #leftSide .record .recordpart3 h3 {
         margin: 0;
         padding: 0; }
       #wrapper main #leftSide .record .recordpart3 button {
         position: relative;
-        bottom: 5px;
+        bottom: 48px;
+        left: -85px;
         width: 50%; }
         #wrapper main #leftSide .record .recordpart3 button img {
           left: 2px; }
     #wrapper main #leftSide .record .recordpart3:before {
       position: absolute;
-      right: -5px;
+      right: -25px;
       top: 5px;
-      height: 80px; } }
+      height: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
